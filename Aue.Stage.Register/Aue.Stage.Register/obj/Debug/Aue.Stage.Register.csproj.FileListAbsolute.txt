@@ -1,0 +1,10 @@
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\bin\Debug\Aue.Stage.Register.exe.config
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\bin\Debug\Aue.Stage.Register.exe
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\bin\Debug\Aue.Stage.Register.pdb
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.csproj.AssemblyReference.cache
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.Form1.resources
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.Properties.Resources.resources
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.csproj.GenerateResource.cache
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.csproj.CoreCompileInputs.cache
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.exe
+C:\Users\ThuzinRealOne\source\repos\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.pdb
