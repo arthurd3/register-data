@@ -10,15 +10,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using Aue.Stage.Register.Forms;
 
 namespace Aue.Stage.Register
 {
 
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         private CreateContact createContact;
         private ListAllFromContact listAllFromContact;
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             createContact = new CreateContact();
@@ -103,7 +104,26 @@ namespace Aue.Stage.Register
 
         private void updateButton_Click(object sender, EventArgs e)
         {
+            if (listBox1.SelectedItem == null)
+            {
+                MessageBox.Show("Por favor, selecione um contato na lista para alterar.",
+                                "Nenhum Contato Selecionado",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
 
+            Contact selectedContact = listBox1.SelectedItem as Contact;
+
+            using (var updateForm = new ContactUpdateForm(selectedContact))
+            {
+                var result = updateForm.ShowDialog();
+
+                if (result == DialogResult.OK)
+                {
+                    LoadAllContacts();
+                }
+            }
         }
     }
 }

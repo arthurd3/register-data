@@ -13,7 +13,6 @@ C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Re
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\bin\Debug\Aue.Stage.Register.pdb
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.csproj.AssemblyReference.cache
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.exe.config
-C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.Form1.resources
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.Properties.Resources.resources
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.csproj.GenerateResource.cache
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.csproj.CoreCompileInputs.cache
@@ -29,3 +28,5 @@ C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Re
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\bin\Debug\System.Data.SQLite.xml
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stag.2C2A1A85.Up2Date
 C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\bin\Debug\auebd.mdb
+C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.MainForm.resources
+C:\Users\ThuzinRealOne\Desktop\Projetos C#\C#-Estagio\register-data\Aue.Stage.Register\Aue.Stage.Register\obj\Debug\Aue.Stage.Register.Forms.ContactUpdateForm.resources

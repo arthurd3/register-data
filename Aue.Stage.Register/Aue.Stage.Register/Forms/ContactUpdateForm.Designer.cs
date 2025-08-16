@@ -1,6 +1,6 @@
 ﻿namespace Aue.Stage.Register.Forms
 {
-    partial class UpdateForm
+    partial class ContactUpdateForm
     {
         /// <summary>
         /// Required designer variable.
@@ -50,10 +50,11 @@
             this.changeBtn.TabIndex = 0;
             this.changeBtn.Text = "Alterar";
             this.changeBtn.UseVisualStyleBackColor = true;
-            this.changeBtn.Click += new System.EventHandler(this.button1_Click);
+            this.changeBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
             // progressBar1
             // 
+            this.progressBar1.ForeColor = System.Drawing.Color.ForestGreen;
             this.progressBar1.Location = new System.Drawing.Point(52, 367);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(291, 23);
@@ -79,6 +80,7 @@
             this.femaleCheckBox.TabIndex = 1;
             this.femaleCheckBox.Text = "Feminino";
             this.femaleCheckBox.UseVisualStyleBackColor = true;
+            this.femaleCheckBox.CheckedChanged += new System.EventHandler(this.femaleCheckBox_CheckedChanged);
             // 
             // maleCheckBox
             // 
@@ -143,7 +145,7 @@
             this.label1.Text = "Alterando Contato ->";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // UpdateForm
+            // ContactUpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,7 +159,7 @@
             this.Controls.Add(this.Nome);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.changeBtn);
-            this.Name = "UpdateForm";
+            this.Name = "ContactUpdateForm";
             this.Text = "UpdateForm";
             this.Load += new System.EventHandler(this.UpdateForm_Load);
             this.groupBox1.ResumeLayout(false);

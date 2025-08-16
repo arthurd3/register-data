@@ -1,6 +1,6 @@
 ﻿namespace Aue.Stage.Register
 {
-    partial class Form1
+    partial class MainForm
     {
        
         private System.ComponentModel.IContainer components = null;
@@ -167,7 +167,7 @@
             this.listBox1.Size = new System.Drawing.Size(429, 303);
             this.listBox1.TabIndex = 13;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -184,8 +184,8 @@
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.Nome);
             this.Controls.Add(this.coun);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainForm";
+            this.Text = "Cadastro de Contatos";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
