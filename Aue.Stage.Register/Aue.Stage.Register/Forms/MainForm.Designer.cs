@@ -29,7 +29,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.femaleCheckBox = new System.Windows.Forms.CheckBox();
             this.maleCheckBox = new System.Windows.Forms.CheckBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listContactsBox = new System.Windows.Forms.ListBox();
             this.reportListView = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -151,13 +151,13 @@
             this.maleCheckBox.UseVisualStyleBackColor = true;
             this.maleCheckBox.CheckedChanged += new System.EventHandler(this.maleCheckBox_CheckedChanged);
             // 
-            // listBox1
+            // listContactsBox
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(429, 303);
-            this.listBox1.TabIndex = 13;
+            this.listContactsBox.FormattingEnabled = true;
+            this.listContactsBox.Location = new System.Drawing.Point(12, 12);
+            this.listContactsBox.Name = "listContactsBox";
+            this.listContactsBox.Size = new System.Drawing.Size(429, 303);
+            this.listContactsBox.TabIndex = 13;
             // 
             // reportListView
             // 
@@ -175,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 583);
             this.Controls.Add(this.reportListView);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listContactsBox);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ExcluiButton);
             this.Controls.Add(this.AlteraButton);
@@ -188,7 +188,7 @@
             this.Controls.Add(this.coun);
             this.Name = "MainForm";
             this.Text = "Cadastro de Contatos";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -210,7 +210,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox femaleCheckBox;
         private System.Windows.Forms.CheckBox maleCheckBox;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listContactsBox;
         private System.Windows.Forms.ListView reportListView;
     }
 }

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Aue.Stage.Register.Service
 {
-    public class ListAllFromContact
+    public class ListAllFromContacts
     {
         private ContactRepositoryGateway repoGateway;
 
-        public ListAllFromContact()
+        public ListAllFromContacts()
         {
             repoGateway = new ContactRepositoryGatewayImpl();
         }
