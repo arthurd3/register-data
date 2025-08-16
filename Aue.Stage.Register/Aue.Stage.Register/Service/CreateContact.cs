@@ -39,7 +39,12 @@ namespace Aue.Stage.Register.Service
                 return false;
             }
             
-            return repoGateway.Create(contact);
+            if(repoGateway.Create(contact))
+                return true;
+           
+            MessageBox.Show("Nao foi possível criar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
+           
         }
     }
 }

@@ -158,13 +158,7 @@ namespace Aue.Stage.Register
                     reportListView.Items.Add(monthItem);
                 }
 
-                ListViewItem cityTotalItem = new ListViewItem($"  . Total");
-                cityTotalItem.SubItems.Add(contatosDaCidade.Count.ToString());
-                cityTotalItem.SubItems.Add(contatosDaCidade.Count(c => c.Sex == "M").ToString());
-                cityTotalItem.SubItems.Add(contatosDaCidade.Count(c => c.Sex == "F").ToString());
-                cityTotalItem.Font = new Font(reportListView.Font, FontStyle.Bold);
-                cityTotalItem.Group = cityGroup;
-                reportListView.Items.Add(cityTotalItem);
+                
             }
         }
         private void AddTotalContactsSummary(List<Contact> todosContatos, int totalHomens, int totalMulheres)

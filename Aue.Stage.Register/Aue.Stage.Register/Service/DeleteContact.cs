@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Aue.Stage.Register.Service
 {
@@ -18,7 +19,11 @@ namespace Aue.Stage.Register.Service
 
         public bool deleteContact(int contactId)
         {
-            return repoGateway.Delete(contactId);
+            if(deleteContact(contactId))
+                return true;
+
+            MessageBox.Show("Nao foi possível deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return false;
         }
     }
 }
