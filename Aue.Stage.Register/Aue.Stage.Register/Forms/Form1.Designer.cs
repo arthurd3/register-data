@@ -17,57 +17,62 @@
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            this.ContarDadosCidadeButton = new System.Windows.Forms.Button();
+            this.coun = new System.Windows.Forms.Button();
             this.Nome = new System.Windows.Forms.Label();
-            this.NomeTextBox = new System.Windows.Forms.TextBox();
-            this.CidadeTextBox = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.cityTextBox = new System.Windows.Forms.TextBox();
             this.Cidade = new System.Windows.Forms.Label();
             this.Sexo = new System.Windows.Forms.Label();
-            this.Masculino = new System.Windows.Forms.CheckBox();
-            this.Feminino = new System.Windows.Forms.CheckBox();
             this.IncluiButton = new System.Windows.Forms.Button();
             this.AlteraButton = new System.Windows.Forms.Button();
             this.ExcluiButton = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.femaleCheckBox = new System.Windows.Forms.CheckBox();
+            this.maleCheckBox = new System.Windows.Forms.CheckBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ContarDadosCidadeButton
+            // coun
             // 
-            this.ContarDadosCidadeButton.Location = new System.Drawing.Point(12, 529);
-            this.ContarDadosCidadeButton.Name = "ContarDadosCidadeButton";
-            this.ContarDadosCidadeButton.Size = new System.Drawing.Size(291, 42);
-            this.ContarDadosCidadeButton.TabIndex = 0;
-            this.ContarDadosCidadeButton.Text = "Contar No de contatos por cidade";
-            this.ContarDadosCidadeButton.UseVisualStyleBackColor = true;
-            this.ContarDadosCidadeButton.Click += new System.EventHandler(this.button1_Click);
+            this.coun.Location = new System.Drawing.Point(12, 529);
+            this.coun.Name = "coun";
+            this.coun.Size = new System.Drawing.Size(291, 42);
+            this.coun.TabIndex = 0;
+            this.coun.Text = "Contar No de contatos por cidade";
+            this.coun.UseVisualStyleBackColor = true;
+            this.coun.Click += new System.EventHandler(this.button1_Click);
             // 
             // Nome
             // 
             this.Nome.AutoSize = true;
-            this.Nome.Location = new System.Drawing.Point(470, 40);
+            this.Nome.Location = new System.Drawing.Point(470, 52);
             this.Nome.Name = "Nome";
             this.Nome.Size = new System.Drawing.Size(35, 13);
             this.Nome.TabIndex = 1;
             this.Nome.Text = "Nome";
             // 
-            // NomeTextBox
+            // nameTextBox
             // 
-            this.NomeTextBox.Location = new System.Drawing.Point(516, 37);
-            this.NomeTextBox.Name = "NomeTextBox";
-            this.NomeTextBox.Size = new System.Drawing.Size(257, 20);
-            this.NomeTextBox.TabIndex = 2;
+            this.nameTextBox.Location = new System.Drawing.Point(516, 49);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(257, 20);
+            this.nameTextBox.TabIndex = 2;
+            this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
-            // CidadeTextBox
+            // cityTextBox
             // 
-            this.CidadeTextBox.Location = new System.Drawing.Point(516, 155);
-            this.CidadeTextBox.Name = "CidadeTextBox";
-            this.CidadeTextBox.Size = new System.Drawing.Size(257, 20);
-            this.CidadeTextBox.TabIndex = 4;
+            this.cityTextBox.Location = new System.Drawing.Point(516, 172);
+            this.cityTextBox.Name = "cityTextBox";
+            this.cityTextBox.Size = new System.Drawing.Size(257, 20);
+            this.cityTextBox.TabIndex = 4;
+            this.cityTextBox.TextChanged += new System.EventHandler(this.cityTextBox_TextChanged);
             // 
             // Cidade
             // 
             this.Cidade.AutoSize = true;
-            this.Cidade.Location = new System.Drawing.Point(470, 158);
+            this.Cidade.Location = new System.Drawing.Point(470, 175);
             this.Cidade.Name = "Cidade";
             this.Cidade.Size = new System.Drawing.Size(40, 13);
             this.Cidade.TabIndex = 3;
@@ -77,33 +82,11 @@
             // Sexo
             // 
             this.Sexo.AutoSize = true;
-            this.Sexo.Location = new System.Drawing.Point(470, 102);
+            this.Sexo.Location = new System.Drawing.Point(470, 115);
             this.Sexo.Name = "Sexo";
             this.Sexo.Size = new System.Drawing.Size(31, 13);
             this.Sexo.TabIndex = 5;
             this.Sexo.Text = "Sexo";
-            // 
-            // Masculino
-            // 
-            this.Masculino.AutoSize = true;
-            this.Masculino.Location = new System.Drawing.Point(516, 101);
-            this.Masculino.Name = "Masculino";
-            this.Masculino.Size = new System.Drawing.Size(74, 17);
-            this.Masculino.TabIndex = 6;
-            this.Masculino.Text = "Masculino";
-            this.Masculino.UseVisualStyleBackColor = true;
-            this.Masculino.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // Feminino
-            // 
-            this.Feminino.AutoSize = true;
-            this.Feminino.Location = new System.Drawing.Point(602, 101);
-            this.Feminino.Name = "Feminino";
-            this.Feminino.Size = new System.Drawing.Size(68, 17);
-            this.Feminino.TabIndex = 7;
-            this.Feminino.Text = "Feminino";
-            this.Feminino.UseVisualStyleBackColor = true;
-            this.Feminino.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // IncluiButton
             // 
@@ -113,7 +96,7 @@
             this.IncluiButton.TabIndex = 8;
             this.IncluiButton.Text = "Inclui";
             this.IncluiButton.UseVisualStyleBackColor = true;
-            this.IncluiButton.Click += new System.EventHandler(this.button2_Click);
+            this.IncluiButton.Click += new System.EventHandler(this.includeButton_Click);
             // 
             // AlteraButton
             // 
@@ -136,32 +119,75 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
+            this.listView1.Location = new System.Drawing.Point(12, 325);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(414, 335);
+            this.listView1.Size = new System.Drawing.Size(761, 198);
             this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.femaleCheckBox);
+            this.groupBox1.Controls.Add(this.maleCheckBox);
+            this.groupBox1.Location = new System.Drawing.Point(516, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(257, 63);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupSexBox_Enter);
+            // 
+            // femaleCheckBox
+            // 
+            this.femaleCheckBox.AutoSize = true;
+            this.femaleCheckBox.Location = new System.Drawing.Point(139, 25);
+            this.femaleCheckBox.Name = "femaleCheckBox";
+            this.femaleCheckBox.Size = new System.Drawing.Size(68, 17);
+            this.femaleCheckBox.TabIndex = 1;
+            this.femaleCheckBox.Text = "Feminino";
+            this.femaleCheckBox.UseVisualStyleBackColor = true;
+            this.femaleCheckBox.CheckedChanged += new System.EventHandler(this.femaleCheckBox_CheckedChanged_1);
+            // 
+            // maleCheckBox
+            // 
+            this.maleCheckBox.AutoSize = true;
+            this.maleCheckBox.Location = new System.Drawing.Point(16, 25);
+            this.maleCheckBox.Name = "maleCheckBox";
+            this.maleCheckBox.Size = new System.Drawing.Size(74, 17);
+            this.maleCheckBox.TabIndex = 0;
+            this.maleCheckBox.Text = "Masculino";
+            this.maleCheckBox.UseVisualStyleBackColor = true;
+            this.maleCheckBox.CheckedChanged += new System.EventHandler(this.maleCheckBox_CheckedChanged);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(429, 303);
+            this.listBox1.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 583);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.ExcluiButton);
             this.Controls.Add(this.AlteraButton);
             this.Controls.Add(this.IncluiButton);
-            this.Controls.Add(this.Feminino);
-            this.Controls.Add(this.Masculino);
             this.Controls.Add(this.Sexo);
-            this.Controls.Add(this.CidadeTextBox);
+            this.Controls.Add(this.cityTextBox);
             this.Controls.Add(this.Cidade);
-            this.Controls.Add(this.NomeTextBox);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.Nome);
-            this.Controls.Add(this.ContarDadosCidadeButton);
+            this.Controls.Add(this.coun);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,18 +195,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Button ContarDadosCidadeButton;
+        private System.Windows.Forms.Button coun;
         private System.Windows.Forms.Label Nome;
-        private System.Windows.Forms.TextBox NomeTextBox;
-        private System.Windows.Forms.TextBox CidadeTextBox;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.Label Cidade;
         private System.Windows.Forms.Label Sexo;
-        private System.Windows.Forms.CheckBox Masculino;
-        private System.Windows.Forms.CheckBox Feminino;
         private System.Windows.Forms.Button IncluiButton;
         private System.Windows.Forms.Button AlteraButton;
         private System.Windows.Forms.Button ExcluiButton;
         private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckBox femaleCheckBox;
+        private System.Windows.Forms.CheckBox maleCheckBox;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
