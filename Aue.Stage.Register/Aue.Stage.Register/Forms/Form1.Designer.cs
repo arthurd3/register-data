@@ -106,6 +106,7 @@
             this.AlteraButton.TabIndex = 9;
             this.AlteraButton.Text = "Altera";
             this.AlteraButton.UseVisualStyleBackColor = true;
+            this.AlteraButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // ExcluiButton
             // 

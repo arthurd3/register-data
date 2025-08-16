@@ -100,5 +100,10 @@ namespace Aue.Stage.Register
 
             listBox1.DisplayMember = "Name";
         }
+
+        private void updateButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
