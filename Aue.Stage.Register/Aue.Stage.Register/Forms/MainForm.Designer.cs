@@ -42,7 +42,7 @@
             this.coun.TabIndex = 0;
             this.coun.Text = "Contar No de contatos por cidade";
             this.coun.UseVisualStyleBackColor = true;
-            this.coun.Click += new System.EventHandler(this.button1_Click);
+            this.coun.Click += new System.EventHandler(this.countContactByCityButton_Click);
             // 
             // Nome
             // 
@@ -116,6 +116,7 @@
             this.ExcluiButton.TabIndex = 10;
             this.ExcluiButton.Text = "Exclui";
             this.ExcluiButton.UseVisualStyleBackColor = true;
+            this.ExcluiButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
             // listView1
             // 
@@ -125,6 +126,7 @@
             this.listView1.Size = new System.Drawing.Size(761, 198);
             this.listView1.TabIndex = 11;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged);
             // 
             // groupBox1
             // 

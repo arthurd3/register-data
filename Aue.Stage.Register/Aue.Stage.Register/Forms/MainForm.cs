@@ -18,25 +18,36 @@ namespace Aue.Stage.Register
     public partial class MainForm : Form
     {
         private CreateContact createContact;
+        private DeleteContact deleteContact;
         private ListAllFromContact listAllFromContact;
+
         public MainForm()
         {
             InitializeComponent();
             createContact = new CreateContact();
+            deleteContact = new DeleteContact();
             listAllFromContact = new ListAllFromContact();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void LoadAllContacts()
+        {
+            listBox1.DataSource = null;
+
+            listBox1.DataSource = listAllFromContact.ListAllContact();
+
+            listBox1.DisplayMember = "Name";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            LoadAllContacts();
+        }
+
+        private void countContactByCityButton_Click(object sender, EventArgs e)
         {
 
         }
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void includeButton_Click(object sender, EventArgs e)
         {
@@ -58,48 +69,6 @@ namespace Aue.Stage.Register
             cityTextBox.Clear();
 
             LoadAllContacts();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            LoadAllContacts();
-        }
-
-        private void groupSexBox_Enter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void femaleCheckBox_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (femaleCheckBox.Checked)
-                maleCheckBox.Checked = false;
-        }
-
-        private void maleCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (maleCheckBox.Checked)
-                femaleCheckBox.Checked = false;
-        }
-
-        private void cityTextBox_TextChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void nameTextBox_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void LoadAllContacts()
-        {
-            listBox1.DataSource = null;
-
-            listBox1.DataSource = listAllFromContact.ListAllContact();
-
-            listBox1.DisplayMember = "Name";
         }
 
         private void updateButton_Click(object sender, EventArgs e)
@@ -125,5 +94,67 @@ namespace Aue.Stage.Register
                 }
             }
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            Contact selectedContact = listBox1.SelectedItem as Contact;
+
+            if (selectedContact == null)
+            {
+                MessageBox.Show("Por favor, selecione um contato na lista para excluir.",
+                                "Nenhum Contato Selecionado",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                return;
+            }
+
+            if( deleteContact.deleteContact(selectedContact.Id))
+                MessageBox.Show("Contato excluído com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Erro ao excluir o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            LoadAllContacts();
+        }
+
+        private void femaleCheckBox_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (femaleCheckBox.Checked)
+                maleCheckBox.Checked = false;
+        }
+
+        private void maleCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (maleCheckBox.Checked)
+                femaleCheckBox.Checked = false;
+        }
+
+        private void groupSexBox_Enter(object sender, EventArgs e) { }
+        private void cityTextBox_TextChanged(object sender, EventArgs e) { }
+        private void nameTextBox_TextChanged(object sender, EventArgs e) { }
+        private void label2_Click(object sender, EventArgs e) { }
+        private void reportListView_SelectedIndexChanged(object sender, EventArgs e) { }
+
+        private void ConfigureReportListView()
+        {
+            // Garante que a ListView esteja limpa antes de configurar
+            reportListView_SelectedIndexChanged.Clear();
+
+            // Define o modo de exibição para "Detalhes", que é o que permite colunas
+            reportListView.View = View.Details;
+
+            // Impede que o usuário edite os itens diretamente
+            reportListView.LabelEdit = false;
+
+            // Permite que a linha inteira seja selecionada
+            reportListView.FullRowSelect = true;
+
+            // Adiciona as colunas ao cabeçalho da ListView
+            // Parâmetros: (Texto do Cabeçalho, Largura em pixels, Alinhamento do Texto)
+            reportListView.Columns.Add("Descrição", 250, HorizontalAlignment.Left);
+            reportListView.Columns.Add("Total", 70, HorizontalAlignment.Center);
+            reportListView.Columns.Add("Homens", 70, HorizontalAlignment.Center);
+            reportListView.Columns.Add("Mulheres", 70, HorizontalAlignment.Center);
+        }
+
     }
 }
