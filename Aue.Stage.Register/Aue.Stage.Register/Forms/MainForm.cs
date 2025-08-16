@@ -105,11 +105,13 @@ namespace Aue.Stage.Register
         {
             
             if (deleteContact.deleteContact(selectContact().Id))
+            {
                 MessageBox.Show("Contato deletar com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loadAllContacts();
+            }
             else
                 MessageBox.Show("Erro ao deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            loadAllContacts();
         }
 
         private Contact selectContact()

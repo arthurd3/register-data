@@ -50,7 +50,7 @@ namespace Aue.Stage.Register.Forms
                 MessageBox.Show("Nao foi possível atualizar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
                 MessageBox.Show("Contato atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-           
+
             this.Close();
 
         }
