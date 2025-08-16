@@ -49,19 +49,16 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    if (contact.RegistrationDate == DateTime.MinValue)
-                    {
-                        contact.RegistrationDate = DateTime.Now;
-                    }
+                    int nextId = GetNextId();
 
-                    string sql = "INSERT INTO Contatos (Nome, Cidade, Sexo, Data) VALUES (?, ?, ?, ?)";
+                    string sql = "INSERT INTO Contatos (CodContato, Nome, Cidade, Sexo) VALUES (?, ?, ?, ?)";
                     using (var command = new OleDbCommand(sql, connection))
                     {
+                        command.Parameters.AddWithValue("?", nextId);
                         command.Parameters.AddWithValue("?", contact.Name ?? string.Empty);
                         command.Parameters.AddWithValue("?", contact.City ?? string.Empty);
                         command.Parameters.AddWithValue("?", contact.Sex);
-                        command.Parameters.AddWithValue("?", contact.RegistrationDate);
-
+                     
                         command.ExecuteNonQuery();
                     }
                 }
@@ -83,7 +80,7 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    string sql = "SELECT CodContato, Nome, Cidade, Sexo, Data FROM Contatos WHERE CodContato = ?";
+                    string sql = "SELECT CodContato, Nome, Cidade, Sexo FROM Contatos WHERE CodContato = ?";
                     using (var command = new OleDbCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("?", id);
@@ -92,13 +89,12 @@ namespace Aue.Stage.Register.DataAccess
                         {
                             if (reader.Read())
                             {
-                                return new Contact 
+                                return new Contact
                                 {
                                     Id = Convert.ToInt32(reader["CodContato"]),
                                     Name = reader["Nome"]?.ToString() ?? string.Empty,
                                     City = reader["Cidade"]?.ToString() ?? string.Empty,
-                                    Sex = (char)(reader["Sexo"].ToString()?[0]),
-                                    RegistrationDate = reader["Data"] != DBNull.Value ? Convert.ToDateTime(reader["Data"]) : DateTime.Now
+                                    Sex = (char)(reader["Sexo"].ToString()?[0])
                                 };
                             }
                         }
@@ -124,7 +120,7 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    string sql = "SELECT CodContato, Nome, Cidade, Sexo, Data FROM Contatos ORDER BY CodContato";
+                    string sql = "SELECT CodContato, Nome, Cidade, Sexo FROM Contatos ORDER BY CodContato";
                     using (var command = new OleDbCommand(sql, connection))
                     using (var reader = command.ExecuteReader())
                     {
@@ -135,8 +131,7 @@ namespace Aue.Stage.Register.DataAccess
                                 Id = Convert.ToInt32(reader["CodContato"]),
                                 Name = reader["Nome"]?.ToString() ?? string.Empty,
                                 City = reader["Cidade"]?.ToString() ?? string.Empty,
-                                Sex = (char)(reader["Sexo"].ToString()?[0]),
-                                RegistrationDate = reader["Data"] != DBNull.Value ? Convert.ToDateTime(reader["Data"]) : DateTime.Now
+                                Sex = (char)(reader["Sexo"].ToString()?[0])
                             });
                         }
                     }
@@ -159,13 +154,12 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    string sql = "UPDATE Contatos SET Nome = ?, Cidade = ?, Sexo = ?, Data = ? WHERE CodContato = ?";
+                    string sql = "UPDATE Contatos SET Nome = ?, Cidade = ?, Sexo = ? WHERE CodContato = ?";
                     using (var command = new OleDbCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("?", contact.Name ?? string.Empty);
                         command.Parameters.AddWithValue("?", contact.City ?? string.Empty);
                         command.Parameters.AddWithValue("?", contact.Sex);
-                        command.Parameters.AddWithValue("?", contact.RegistrationDate);
                         command.Parameters.AddWithValue("?", contact.Id);
 
                         int rowsAffected = command.ExecuteNonQuery();
@@ -204,6 +198,26 @@ namespace Aue.Stage.Register.DataAccess
                 MessageBox.Show($"Erro ao deletar contato: {ex.Message}",
                     "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
+            }
+        }
+
+        private int GetNextId()
+        {
+            using (var connection = new OleDbConnection(GetConnectionString()))
+            {
+                connection.Open();
+
+                int nextId = 1;
+                string getMaxIdSql = "SELECT MAX(CodContato) FROM Contatos";
+                using (var maxIdCommand = new OleDbCommand(getMaxIdSql, connection))
+                {
+                    var result = maxIdCommand.ExecuteScalar();
+                    if (result != null && result != DBNull.Value)
+                    {
+                        nextId = Convert.ToInt32(result) + 1;
+                    }
+                }
+                return nextId;
             }
         }
     }
