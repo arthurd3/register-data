@@ -51,6 +51,7 @@ namespace Aue.Stage.Register.Forms
             else
                 MessageBox.Show("Contato atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            this.DialogResult = DialogResult.OK;
             this.Close();
 
         }
