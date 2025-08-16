@@ -212,6 +212,7 @@ namespace Aue.Stage.Register.DataAccess
                 using (var maxIdCommand = new OleDbCommand(getMaxIdSql, connection))
                 {
                     var result = maxIdCommand.ExecuteScalar();
+
                     if (result != null && result != DBNull.Value)
                     {
                         nextId = Convert.ToInt32(result) + 1;
