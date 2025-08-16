@@ -9,11 +9,8 @@ using System.Windows.Forms;
 
 namespace Aue.Stage.Register.DataAccess
 {
-    internal class ContactRepositoryGatewayImpl : ContactRepositoryGateway
+    class ContactRepositoryGatewayImpl : ContactRepositoryGateway
     {
-        private static readonly DateTime Epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-
-
         private string GetConnectionString()
         {
             try
@@ -32,11 +29,7 @@ namespace Aue.Stage.Register.DataAccess
                 throw new Exception($"Erro ao configurar conexão: {ex.Message}");
             }
         }
-        private static long ConvertToTimestamp(DateTime value)
-        {
-            TimeSpan elapsedTime = value - Epoch;
-            return (long)elapsedTime.TotalSeconds;
-        }
+     
 
         public bool Create(Contact contact)
         {
