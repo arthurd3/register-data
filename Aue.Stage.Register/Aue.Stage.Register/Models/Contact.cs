@@ -15,5 +15,4 @@ namespace Aue.Stage.Register.Models
         public DateTime CreatedAt { get; set; }
         
     }
-
 }

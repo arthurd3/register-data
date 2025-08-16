@@ -62,34 +62,6 @@ namespace Aue.Stage.Register.DataAccess
             return true;
         }
 
-        public Contact GetById(int id)
-        {
-            using (var connection = CreateOpenConnection())
-            {
-                string sql = "SELECT CodContato, Nome, Sexo, [Data], Cidade FROM Contatos WHERE CodContato = ?";
-                using (var command = new OleDbCommand(sql, connection))
-                {
-                    command.Parameters.AddWithValue("?", id);
-
-                    using (var reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            return new Contact
-                            {
-                                Id = Convert.ToInt32(reader["CodContato"]),
-                                Name = reader["Nome"]?.ToString() ?? string.Empty,
-                                City = reader["Cidade"]?.ToString() ?? string.Empty,
-                                Sex = reader["Sexo"]?.ToString() ?? string.Empty,
-                                CreatedAt = reader["Data"] != DBNull.Value ? Convert.ToDateTime(reader["Data"]) : DateTime.Now
-                            };
-                        }
-                    }
-                }
-            }   
-            return null;
-        }
-
         public List<Contact> GetAll()
         {
             var contacts = new List<Contact>();
