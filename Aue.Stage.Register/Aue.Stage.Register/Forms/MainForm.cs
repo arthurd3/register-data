@@ -49,12 +49,6 @@ namespace Aue.Stage.Register
             reportListView.Items.Clear();
             reportListView.Groups.Clear();
 
-            if (todosContatos == null || !todosContatos.Any())
-            {
-                reportListView.Items.Add("Nenhum contato cadastrado para análise.");
-                return;
-            }
-
             int totalHomens = todosContatos.Count(c => c.Sex == "M");
             int totalMulheres = todosContatos.Count(c => c.Sex == "F");
 
@@ -80,6 +74,9 @@ namespace Aue.Stage.Register
             nameTextBox.Clear();
             cityTextBox.Clear();
 
+            femaleCheckBox.Checked = false;
+            maleCheckBox.Checked = false;
+
             LoadAllContacts();
         }
 
@@ -98,11 +95,8 @@ namespace Aue.Stage.Register
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if( deleteContact.deleteContact(selectContact().Id))
-                MessageBox.Show("Contato deletar com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
-                MessageBox.Show("Erro ao deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+            deleteContact.deleteContact(selectContact().Id);
+            
             LoadAllContacts();
         }
 

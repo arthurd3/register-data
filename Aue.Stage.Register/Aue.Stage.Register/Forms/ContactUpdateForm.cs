@@ -20,9 +20,9 @@ namespace Aue.Stage.Register.Forms
         public ContactUpdateForm (Contact contactToUpdate)
         {
             InitializeComponent();
-            LoadContactData();
             this.contactToUpdate = contactToUpdate;
             updateContactService = new UpdateContact();
+            LoadContactData();
         }
         private void LoadContactData()
         {

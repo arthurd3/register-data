@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Aue.Stage.Register.Service
 {
@@ -20,7 +21,14 @@ namespace Aue.Stage.Register.Service
 
         public List<Contact> ListAllContact()
         {
-            return repoGateway.GetAll();
-        } 
+            var allContatcs = repoGateway.GetAll();
+
+            if(allContatcs.DefaultIfEmpty().Count() > 0)
+                return allContatcs.ToList();
+            
+            MessageBox.Show("Nao foi possível deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return new List<Contact>();
+
+        }
     }
 }

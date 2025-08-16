@@ -17,13 +17,12 @@ namespace Aue.Stage.Register.Service
             repoGateway = new ContactRepositoryGatewayImpl();
         }
 
-        public bool deleteContact(int contactId)
+        public void deleteContact(int contactId)
         {
-            if(deleteContact(contactId))
-                return true;
-
-            MessageBox.Show("Nao foi possível deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return false;
+            if(repoGateway.Delete(contactId))
+                MessageBox.Show("Contato deletar com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Erro ao deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
