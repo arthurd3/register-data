@@ -20,31 +20,33 @@ namespace Aue.Stage.Register
         private CreateContact createContact;
         private DeleteContact deleteContact;
         private ListAllFromContacts listAllFromContact;
+        private ValidateAttributes validateAttributes;
 
         public MainForm()
         {
-            InitializeComponent();
             createContact = new CreateContact();
             deleteContact = new DeleteContact();
             listAllFromContact = new ListAllFromContacts();
+            validateAttributes = new ValidateAttributes();
+            InitializeComponent();
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            LoadAllContacts();
-            ConfigureReportListView();
+            loadAllContacts();
+            configureReportListView();
         }
 
-        private void LoadAllContacts()
+        private void loadAllContacts()
         {
             listContactsBox.DataSource = null;
-            listContactsBox.DataSource = listAllFromContact.ListAllContact();
+            listContactsBox.DataSource = listAllFromContact.listAllContact();
             listContactsBox.DisplayMember = "Name";
         }
 
         private void countContactByCityButton_Click(object sender, EventArgs e)
         {
-            var todosContatos = listAllFromContact.ListAllContact();
+            var todosContatos = listAllFromContact.listAllContact();
 
             reportListView.Items.Clear();
             reportListView.Groups.Clear();
@@ -52,24 +54,31 @@ namespace Aue.Stage.Register
             int totalHomens = todosContatos.Count(c => c.Sex == "M");
             int totalMulheres = todosContatos.Count(c => c.Sex == "F");
 
-            AddTotalContactsSummary(todosContatos, totalHomens, totalMulheres);
+            addTotalContactsSummary(todosContatos, totalHomens, totalMulheres);
 
             var gruposPorCidade = todosContatos.GroupBy(contato => contato.City);
 
-            AddCityContactGroupsToReport(gruposPorCidade);
+            addCityContactGroupsToReport(gruposPorCidade);
         }
 
         private void includeButton_Click(object sender, EventArgs e)
         {
-            createContact.createContact(
-                new Contact
-                {
-                    Name = nameTextBox.Text,
-                    City = cityTextBox.Text,
-                    Sex = getCheckBoxSex(),
-                    CreatedAt = DateTime.Now
-                }
-            );
+
+            var contactToCreate = new Contact
+            {
+                Name = nameTextBox.Text,
+                City = cityTextBox.Text,
+                Sex = getCheckBoxSex(),
+                CreatedAt = DateTime.Now
+            };
+
+            if (!validateAttributes.validateAttributes(contactToCreate))
+                return;
+
+            if(createContact.createContact(contactToCreate))
+                MessageBox.Show("Contato adicionado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Erro ao adicionar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             nameTextBox.Clear();
             cityTextBox.Clear();
@@ -77,7 +86,7 @@ namespace Aue.Stage.Register
             femaleCheckBox.Checked = false;
             maleCheckBox.Checked = false;
 
-            LoadAllContacts();
+            loadAllContacts();
         }
 
         private void updateButton_Click(object sender, EventArgs e)
@@ -88,16 +97,19 @@ namespace Aue.Stage.Register
             {
                 var result = updateForm.ShowDialog();
 
-                LoadAllContacts();
-
+                loadAllContacts();
             }
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            deleteContact.deleteContact(selectContact().Id);
             
-            LoadAllContacts();
+            if (deleteContact.deleteContact(selectContact().Id))
+                MessageBox.Show("Contato deletar com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Erro ao deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            loadAllContacts();
         }
 
         private Contact selectContact()
@@ -121,7 +133,7 @@ namespace Aue.Stage.Register
                 sex = femaleCheckBox.Checked ? "F" : "M";
             return sex;
         }
-        private void AddCityContactGroupsToReport(IEnumerable<IGrouping<string, Contact>> gruposPorCidade)
+        private void addCityContactGroupsToReport(IEnumerable<IGrouping<string, Contact>> gruposPorCidade)
         {
             foreach (var grupoCidade in gruposPorCidade)
             {
@@ -155,7 +167,7 @@ namespace Aue.Stage.Register
                 
             }
         }
-        private void AddTotalContactsSummary(List<Contact> todosContatos, int totalHomens, int totalMulheres)
+        private void addTotalContactsSummary(List<Contact> todosContatos, int totalHomens, int totalMulheres)
         {
             ListViewItem totalItem = new ListViewItem("Numero de contatos no banco de dados");
             totalItem.SubItems.Add(todosContatos.Count.ToString());
@@ -176,7 +188,7 @@ namespace Aue.Stage.Register
             if (maleCheckBox.Checked)
                 femaleCheckBox.Checked = false;
         }
-        private void ConfigureReportListView()
+        private void configureReportListView()
         {
             if (reportListView == null) return;
 

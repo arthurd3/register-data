@@ -87,7 +87,7 @@
     <Compile Include="Service\DeleteContact.cs" />
     <Compile Include="Service\ListAllFromContacts.cs" />
     <Compile Include="Service\UpdateContact.cs" />
-    <Compile Include="Service\ValidateAttributes.cs" />
+    <Compile Include="Forms\ValidateAttributes\ValidateAttributes.cs" />
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

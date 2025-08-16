@@ -16,13 +16,15 @@ namespace Aue.Stage.Register.Forms
     {
         private readonly Contact contactToUpdate;
         private readonly UpdateContact updateContactService;
+        private readonly ValidateAttributes validateAttributes;
 
         public ContactUpdateForm (Contact contactToUpdate)
         {
-            InitializeComponent();
             this.contactToUpdate = contactToUpdate;
             updateContactService = new UpdateContact();
+            validateAttributes = new ValidateAttributes();
             LoadContactData();
+            InitializeComponent();
         }
         private void LoadContactData()
         {
@@ -41,8 +43,14 @@ namespace Aue.Stage.Register.Forms
             contactToUpdate.City = cityTextBox.Text;
             contactToUpdate.Sex = getCheckBoxSex();
 
-            updateContactService.updateContact(contactToUpdate);
+            if(!validateAttributes.validateAttributes(contactToUpdate))
+                return;
 
+            if (!updateContactService.updateContact(contactToUpdate))
+                MessageBox.Show("Nao foi possível atualizar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+                MessageBox.Show("Contato atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
             this.Close();
 
         }

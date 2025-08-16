@@ -20,19 +20,9 @@ namespace Aue.Stage.Register.Service
             validateAttributes = new ValidateAttributes();
         }
 
-        public void updateContact(Contact contact)
+        public bool updateContact(Contact contact)
         {
-            if(validateAttributes.validateAttributes(contact))
-            {
-                if (repoGateway.Update(contact))
-                {
-                    MessageBox.Show("Contato alterada com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                
-                MessageBox.Show("Nao foi possível atualizar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
+            return repoGateway.update(contact);
         }
     }
 }

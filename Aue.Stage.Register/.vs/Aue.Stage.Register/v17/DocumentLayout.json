@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\service\\updatecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\updatecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\service\\listallfromcontacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\listallfromcontacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\service\\deletecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\deletecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\service\\createcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,16 +27,12 @@
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\service\\validateattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\validateattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\service\\listallfromcontacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\listallfromcontacts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\forms\\validateattributes\\validateattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\validateattributes\\validateattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\dataaccess\\contactrepositorygatewayimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\service\\deletecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\deletecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,17 +58,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Forms\\MainForm.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFsAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs*",
+              "RelativeToolTip": "Aue.Stage.Register\\Forms\\MainForm.cs*",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwGMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-15T14:56:56.1Z",
               "IsPinned": true,
@@ -76,13 +76,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ContactUpdateForm.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "RelativeToolTip": "Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowCcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T15:34:24.75Z",
               "IsPinned": true,
@@ -91,11 +91,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CreateContact.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\CreateContact.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\CreateContact.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\CreateContact.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\Service\\CreateContact.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T16:25:18.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ValidateAttributes.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\ValidateAttributes.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\ValidateAttributes.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\ValidateAttributes.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Service\\ValidateAttributes.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ValidateAttributes\\ValidateAttributes.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\ValidateAttributes\\ValidateAttributes.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ValidateAttributes\\ValidateAttributes.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\Forms\\ValidateAttributes\\ValidateAttributes.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T22:28:05.651Z",
@@ -103,59 +116,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContactRepositoryGatewayImpl.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAcwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T16:25:23.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateContact.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\CreateContact.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\CreateContact.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\CreateContact.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Service\\CreateContact.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T16:25:18.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UpdateContact.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\UpdateContact.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Service\\UpdateContact.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T21:00:11.554Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "ListAllFromContacts.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\ListAllFromContacts.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\ListAllFromContacts.cs",
               "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\ListAllFromContacts.cs",
               "RelativeToolTip": "Aue.Stage.Register\\Service\\ListAllFromContacts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T21:00:10.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "UpdateContact.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\UpdateContact.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\Service\\UpdateContact.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T21:00:11.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DeleteContact.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\DeleteContact.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\DeleteContact.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\DeleteContact.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\Service\\DeleteContact.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T16:34:53.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ContactUpdateForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
@@ -168,6 +168,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "ContactRepositoryGatewayImpl.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T16:25:23.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs [Design]*",
+              "RelativeToolTip": "Aue.Stage.Register\\Forms\\MainForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T20:26:06.856Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ContactRepositoryGateway.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Gateway\\ContactRepositoryGateway.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Gateway\\ContactRepositoryGateway.cs",
@@ -180,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Contact.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Models\\Contact.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Models\\Contact.cs",
@@ -189,31 +214,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T16:54:55.785Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs [Design]",
-              "RelativeToolTip": "Aue.Stage.Register\\Forms\\MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T20:26:06.856Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeleteContact.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\DeleteContact.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\DeleteContact.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\DeleteContact.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Service\\DeleteContact.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAnwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T16:34:53.059Z",
               "EditorCaption": ""
             }
           ]

@@ -12,7 +12,7 @@ namespace Aue.Stage.Register.DataAccess
     class ContactRepositoryGatewayImpl : ContactRepositoryGateway
     {
         private readonly string dbPath = "auebd.mdb";
-        private string GetConnectionString()
+        private string getConnectionString()
         {
             if (!File.Exists(dbPath))
                 throw new FileNotFoundException($"Banco de Dados nao Encontrado: {dbPath}");
@@ -27,10 +27,10 @@ namespace Aue.Stage.Register.DataAccess
                 throw;
             }
         }
-        private OleDbConnection CreateOpenConnection()
+        private OleDbConnection createOpenConnection()
         {
             try{
-                var connection = new OleDbConnection(GetConnectionString());
+                var connection = new OleDbConnection(getConnectionString());
                 connection.Open();
                 return connection;
 
@@ -43,14 +43,14 @@ namespace Aue.Stage.Register.DataAccess
 
         }
 
-        public bool Create(Contact contact)
+        public bool create(Contact contact)
         {
-            using (var connection = CreateOpenConnection())
+            using (var connection = createOpenConnection())
             {
                 string sql = "INSERT INTO Contatos (CodContato, Nome, Sexo, [Data], Cidade) VALUES (?, ?, ?, ?, ?)";
                 using (var command = new OleDbCommand(sql, connection))
                 {
-                    command.Parameters.AddWithValue("?", GetNextId());
+                    command.Parameters.AddWithValue("?", getNextId());
                     command.Parameters.AddWithValue("?", contact.Name ?? string.Empty);
                     command.Parameters.AddWithValue("?", contact.Sex ?? string.Empty);
                     command.Parameters.AddWithValue("?", contact.CreatedAt.ToString("yyyy-MM-dd"));
@@ -62,11 +62,11 @@ namespace Aue.Stage.Register.DataAccess
             return true;
         }
 
-        public List<Contact> GetAll()
+        public List<Contact> getAll()
         {
             var contacts = new List<Contact>();
 
-            using (var connection = CreateOpenConnection())
+            using (var connection = createOpenConnection())
             {
                 string sql = "SELECT CodContato, Nome, Sexo, [Data], Cidade FROM Contatos ORDER BY CodContato";
                 using (var command = new OleDbCommand(sql, connection))
@@ -88,9 +88,9 @@ namespace Aue.Stage.Register.DataAccess
             return contacts;
         }
 
-        public bool Update(Contact contact)
+        public bool update(Contact contact)
         {
-            using (var connection = CreateOpenConnection())
+            using (var connection = createOpenConnection())
             {
                 string sql = "UPDATE Contatos SET Nome = ?, Cidade = ?, Sexo = ?, [Data] = ? WHERE CodContato = ?";
                 using (var command = new OleDbCommand(sql, connection))
@@ -107,9 +107,9 @@ namespace Aue.Stage.Register.DataAccess
             }
         }
 
-        public bool Delete(int id)
+        public bool delete(int id)
         {
-            using (var connection = CreateOpenConnection())
+            using (var connection = createOpenConnection())
             {
                 string sql = "DELETE FROM Contatos WHERE CodContato = ?";
                 using (var command = new OleDbCommand(sql, connection))
@@ -122,9 +122,9 @@ namespace Aue.Stage.Register.DataAccess
             }
         }
 
-        private int GetNextId()
+        private int getNextId()
         {
-            using (var connection = CreateOpenConnection())
+            using (var connection = createOpenConnection())
             {
                 string getMaxIdSql = "SELECT MAX(CodContato) FROM Contatos";
                 using (var maxIdCommand = new OleDbCommand(getMaxIdSql, connection))

@@ -19,14 +19,13 @@ namespace Aue.Stage.Register.Service
             repoGateway = new ContactRepositoryGatewayImpl();
         }
 
-        public List<Contact> ListAllContact()
+        public List<Contact> listAllContact()
         {
-            var allContatcs = repoGateway.GetAll();
+            var allContatcs = repoGateway.getAll();
 
             if(allContatcs.DefaultIfEmpty().Count() > 0)
                 return allContatcs.ToList();
-            
-            MessageBox.Show("Nao foi possível deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+         
             return new List<Contact>();
 
         }
