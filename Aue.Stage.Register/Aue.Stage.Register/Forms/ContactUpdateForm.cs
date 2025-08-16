@@ -30,7 +30,7 @@ namespace Aue.Stage.Register.Forms
             nameTextBox.Text = _contactToUpdate.Name;
             cityTextBox.Text = _contactToUpdate.City;
 
-            if (_contactToUpdate.Sex == 'M')
+            if (_contactToUpdate.Sex == "M")
                 maleCheckBox.Checked = true;
             else
                 femaleCheckBox.Checked = true;
@@ -40,7 +40,7 @@ namespace Aue.Stage.Register.Forms
         {
             _contactToUpdate.Name = nameTextBox.Text;
             _contactToUpdate.City = cityTextBox.Text;
-            _contactToUpdate.Sex = maleCheckBox.Checked ? 'M' : 'F';
+            _contactToUpdate.Sex = maleCheckBox.Checked ? "M" : "F";
 
             bool success = _updateContactService.updateContact(_contactToUpdate);
 

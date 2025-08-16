@@ -11,11 +11,9 @@ namespace Aue.Stage.Register.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
-        public char Sex { get; set; }
-        public override string ToString()
-        {
-            return $"{Name} ({Id})";
-        }
+        public string Sex { get; set; }
+        public DateTime CreatedAt { get; set; }
+        
     }
 
 }

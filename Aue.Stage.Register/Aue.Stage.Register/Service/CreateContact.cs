@@ -27,7 +27,7 @@ namespace Aue.Stage.Register.Service
                 return false;
             }
 
-            if (contact.Sex == ' ')
+            if (string.IsNullOrWhiteSpace(contact.Sex))
             {
                 MessageBox.Show("Porfavor Selecione Algum Sexo.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return false;

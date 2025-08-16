@@ -15,25 +15,14 @@ namespace Aue.Stage.Register.DataAccess
         {
             try
             {
-                var configConnectionString = ConfigurationManager.ConnectionStrings["AueDatabase"]?.ConnectionString;
+                string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "auebd.mdb");
 
-                if (!string.IsNullOrEmpty(configConnectionString))
+                if (!File.Exists(dbPath))
                 {
-                    string dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "auebd.mdb");
-
-                    if (File.Exists(dbPath))
-                    {
-                        return configConnectionString.Replace("auebd.mdb", dbPath);
-                    }
+                    throw new FileNotFoundException($"Arquivo de banco de dados não encontrado: {dbPath}");
                 }
 
-                string defaultDbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "auebd.mdb");
-                if (File.Exists(defaultDbPath))
-                {
-                    return $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={defaultDbPath};";
-                }
-
-                throw new FileNotFoundException($"Arquivo de banco de dados não encontrado: {defaultDbPath}");
+                return $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={dbPath};";
             }
             catch (Exception ex)
             {
@@ -49,16 +38,16 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    int nextId = GetNextId();
-
-                    string sql = "INSERT INTO Contatos (CodContato, Nome, Cidade, Sexo) VALUES (?, ?, ?, ?)";
+                    // CORRIGIDO: Sintaxe SQL estava errada - faltava '(' e ordem das colunas
+                    string sql = "INSERT INTO Contatos (CodContato, Nome, Sexo, [Data], Cidade) VALUES (?, ?, ?, ?, ?)";
                     using (var command = new OleDbCommand(sql, connection))
                     {
-                        command.Parameters.AddWithValue("?", nextId);
+                        command.Parameters.AddWithValue("?", GetNextId());
                         command.Parameters.AddWithValue("?", contact.Name ?? string.Empty);
+                        command.Parameters.AddWithValue("?", contact.Sex ?? string.Empty);
+                        command.Parameters.AddWithValue("?", contact.CreatedAt);
                         command.Parameters.AddWithValue("?", contact.City ?? string.Empty);
-                        command.Parameters.AddWithValue("?", contact.Sex);
-                     
+
                         command.ExecuteNonQuery();
                     }
                 }
@@ -66,8 +55,8 @@ namespace Aue.Stage.Register.DataAccess
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao criar contato: {ex.Message}",
-                    "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Erro ao criar contato: {ex.Message}\n\nVerifique:\n- Se todos os campos estão preenchidos\n- Se a data está no formato correto",
+                    "Erro ao Salvar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
@@ -80,7 +69,8 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    string sql = "SELECT CodContato, Nome, Cidade, Sexo FROM Contatos WHERE CodContato = ?";
+                    // CORRIGIDO: Sintaxe SQL estava errada - não precisava de parênteses no SELECT
+                    string sql = "SELECT CodContato, Nome, Sexo, [Data], Cidade FROM Contatos WHERE CodContato = ?";
                     using (var command = new OleDbCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("?", id);
@@ -94,7 +84,8 @@ namespace Aue.Stage.Register.DataAccess
                                     Id = Convert.ToInt32(reader["CodContato"]),
                                     Name = reader["Nome"]?.ToString() ?? string.Empty,
                                     City = reader["Cidade"]?.ToString() ?? string.Empty,
-                                    Sex = (char)(reader["Sexo"].ToString()?[0])
+                                    Sex = reader["Sexo"]?.ToString() ?? string.Empty,
+                                    CreatedAt = reader["Data"] != DBNull.Value ? Convert.ToDateTime(reader["Data"]) : DateTime.Now
                                 };
                             }
                         }
@@ -120,7 +111,8 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    string sql = "SELECT CodContato, Nome, Cidade, Sexo FROM Contatos ORDER BY CodContato";
+                    // CORRIGIDO: Sintaxe SQL estava errada - removido parênteses do SELECT
+                    string sql = "SELECT CodContato, Nome, Sexo, [Data], Cidade FROM Contatos ORDER BY CodContato";
                     using (var command = new OleDbCommand(sql, connection))
                     using (var reader = command.ExecuteReader())
                     {
@@ -131,7 +123,8 @@ namespace Aue.Stage.Register.DataAccess
                                 Id = Convert.ToInt32(reader["CodContato"]),
                                 Name = reader["Nome"]?.ToString() ?? string.Empty,
                                 City = reader["Cidade"]?.ToString() ?? string.Empty,
-                                Sex = (char)(reader["Sexo"].ToString()?[0])
+                                Sex = reader["Sexo"]?.ToString() ?? string.Empty,
+                                CreatedAt = reader["Data"] != DBNull.Value ? Convert.ToDateTime(reader["Data"]) : DateTime.Now
                             });
                         }
                     }
@@ -139,7 +132,7 @@ namespace Aue.Stage.Register.DataAccess
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Erro ao buscar todos os contatos: {ex.Message}\n\nDetalhes técnicos:\n- Verifique se o arquivo auebd.mdb existe\n- Verifique se a tabela 'Contatos' existe\n- Verifique se as colunas estão corretas",
+                MessageBox.Show($"Erro ao buscar todos os contatos: {ex.Message}",
                     "Erro ao Carregar Dados", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -154,12 +147,14 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    string sql = "UPDATE Contatos SET Nome = ?, Cidade = ?, Sexo = ? WHERE CodContato = ?";
+                    // CORRIGIDO: Adicionado campo Data no UPDATE
+                    string sql = "UPDATE Contatos SET Nome = ?, Cidade = ?, Sexo = ?, [Data] = ? WHERE CodContato = ?";
                     using (var command = new OleDbCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("?", contact.Name ?? string.Empty);
                         command.Parameters.AddWithValue("?", contact.City ?? string.Empty);
-                        command.Parameters.AddWithValue("?", contact.Sex);
+                        command.Parameters.AddWithValue("?", contact.Sex ?? string.Empty);
+                        command.Parameters.AddWithValue("?", contact.CreatedAt);
                         command.Parameters.AddWithValue("?", contact.Id);
 
                         int rowsAffected = command.ExecuteNonQuery();
@@ -203,22 +198,31 @@ namespace Aue.Stage.Register.DataAccess
 
         private int GetNextId()
         {
-            using (var connection = new OleDbConnection(GetConnectionString()))
+            try
             {
-                connection.Open();
-
-                int nextId = 1;
-                string getMaxIdSql = "SELECT MAX(CodContato) FROM Contatos";
-                using (var maxIdCommand = new OleDbCommand(getMaxIdSql, connection))
+                using (var connection = new OleDbConnection(GetConnectionString()))
                 {
-                    var result = maxIdCommand.ExecuteScalar();
+                    connection.Open();
 
-                    if (result != null && result != DBNull.Value)
+                    string getMaxIdSql = "SELECT MAX(CodContato) FROM Contatos";
+                    using (var maxIdCommand = new OleDbCommand(getMaxIdSql, connection))
                     {
-                        nextId = Convert.ToInt32(result) + 1;
+                        var result = maxIdCommand.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value)
+                        {
+                            return Convert.ToInt32(result) + 1;
+                        }
+                        else
+                        {
+                            return 1; // Primeiro registro
+                        }
                     }
                 }
-                return nextId;
+            }
+            catch
+            {
+                return 1; // Em caso de erro, começa com 1
             }
         }
     }

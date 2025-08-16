@@ -24,6 +24,7 @@ namespace Aue.Stage.Register
         public MainForm()
         {
             InitializeComponent();
+            ConfigureReportListView();
             createContact = new CreateContact();
             deleteContact = new DeleteContact();
             listAllFromContact = new ListAllFromContact();
@@ -46,21 +47,22 @@ namespace Aue.Stage.Register
 
         private void countContactByCityButton_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void includeButton_Click(object sender, EventArgs e)
         {
-            char sex = ' ';
+            string sex = string.Empty;
 
             if (femaleCheckBox.Checked || maleCheckBox.Checked)
-                sex = femaleCheckBox.Checked ? 'F' : 'M';
+                sex = femaleCheckBox.Checked ? "F" : "M";
 
             var contactToCreate = new Contact
             {
                 Name = nameTextBox.Text,
                 City = cityTextBox.Text,
-                Sex = sex
+                Sex = sex,
+                CreatedAt = DateTime.Now
             };
 
             createContact.createContact(contactToCreate);
@@ -132,29 +134,24 @@ namespace Aue.Stage.Register
         private void cityTextBox_TextChanged(object sender, EventArgs e) { }
         private void nameTextBox_TextChanged(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
-        private void reportListView_SelectedIndexChanged(object sender, EventArgs e) { }
-
+        private void reportListView_SelectedIndexChanged_1(object sender, EventArgs e) { }
         private void ConfigureReportListView()
         {
-            // Garante que a ListView esteja limpa antes de configurar
-            reportListView_SelectedIndexChanged.Clear();
+            if (reportListView == null) return;
 
-            // Define o modo de exibição para "Detalhes", que é o que permite colunas
+            reportListView.Items.Clear();  
+            reportListView.Columns.Clear(); 
+
             reportListView.View = View.Details;
 
-            // Impede que o usuário edite os itens diretamente
             reportListView.LabelEdit = false;
-
-            // Permite que a linha inteira seja selecionada
             reportListView.FullRowSelect = true;
 
-            // Adiciona as colunas ao cabeçalho da ListView
-            // Parâmetros: (Texto do Cabeçalho, Largura em pixels, Alinhamento do Texto)
             reportListView.Columns.Add("Descrição", 250, HorizontalAlignment.Left);
             reportListView.Columns.Add("Total", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Homens", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Mulheres", 70, HorizontalAlignment.Center);
         }
-
+     
     }
 }

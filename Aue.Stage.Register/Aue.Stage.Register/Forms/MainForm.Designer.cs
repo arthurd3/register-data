@@ -26,11 +26,12 @@
             this.IncluiButton = new System.Windows.Forms.Button();
             this.AlteraButton = new System.Windows.Forms.Button();
             this.ExcluiButton = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.femaleCheckBox = new System.Windows.Forms.CheckBox();
             this.maleCheckBox = new System.Windows.Forms.CheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.reportListView = new System.Windows.Forms.ListView();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -118,16 +119,6 @@
             this.ExcluiButton.UseVisualStyleBackColor = true;
             this.ExcluiButton.Click += new System.EventHandler(this.deleteButton_Click);
             // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 325);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(761, 198);
-            this.listView1.TabIndex = 11;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.femaleCheckBox);
@@ -169,14 +160,32 @@
             this.listBox1.Size = new System.Drawing.Size(429, 303);
             this.listBox1.TabIndex = 13;
             // 
+            // reportListView
+            // 
+            this.reportListView.HideSelection = false;
+            this.reportListView.Location = new System.Drawing.Point(12, 335);
+            this.reportListView.Name = "reportListView";
+            this.reportListView.Size = new System.Drawing.Size(761, 188);
+            this.reportListView.TabIndex = 14;
+            this.reportListView.UseCompatibleStateImageBehavior = false;
+            this.reportListView.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged_1);
+            // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(756, 335);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(17, 188);
+            this.vScrollBar1.TabIndex = 15;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 583);
+            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.reportListView);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.ExcluiButton);
             this.Controls.Add(this.AlteraButton);
             this.Controls.Add(this.IncluiButton);
@@ -207,11 +216,12 @@
         private System.Windows.Forms.Button IncluiButton;
         private System.Windows.Forms.Button AlteraButton;
         private System.Windows.Forms.Button ExcluiButton;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox femaleCheckBox;
         private System.Windows.Forms.CheckBox maleCheckBox;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListView reportListView;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 
