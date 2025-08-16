@@ -39,20 +39,14 @@ namespace Aue.Stage.Register.Forms
         {
             contactToUpdate.Name = nameTextBox.Text;
             contactToUpdate.City = cityTextBox.Text;
-            contactToUpdate.Sex = maleCheckBox.Checked ? "M" : "F";
+            contactToUpdate.Sex = getCheckBoxSex();
 
-            bool success = updateContactService.updateContact(contactToUpdate);
+            updateContactService.updateContact(contactToUpdate);
 
-            if (success)
-            {
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            }
-            else
-            {
-                MessageBox.Show("Não foi possível atualizar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            this.Close();
+
         }
+
         private void maleCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (maleCheckBox.Checked)
@@ -63,7 +57,14 @@ namespace Aue.Stage.Register.Forms
             if (femaleCheckBox.Checked)
                 maleCheckBox.Checked = false;
         }
+        private string getCheckBoxSex()
+        {
+            string sex = string.Empty;
 
+            if (femaleCheckBox.Checked || maleCheckBox.Checked)
+                sex = femaleCheckBox.Checked ? "F" : "M";
+            return sex;
+        }
         private void UpdateForm_Load(object sender, EventArgs e) { }
         private void groupBox1_Enter(object sender, EventArgs e) { }   
         private void Sexo_Click(object sender, EventArgs e) { }

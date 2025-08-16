@@ -82,14 +82,14 @@ namespace Aue.Stage.Register
 
         private void updateButton_Click(object sender, EventArgs e)
         {
-            using (var updateForm = new ContactUpdateForm(selectContact()))
+            var contactToUpdate = selectContact();
+
+            using (var updateForm = new ContactUpdateForm(contactToUpdate))
             {
                 var result = updateForm.ShowDialog();
 
-                if (result == DialogResult.OK)
-                {
-                    LoadAllContacts();
-                }
+                LoadAllContacts();
+
             }
         }
 

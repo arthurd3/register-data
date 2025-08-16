@@ -13,38 +13,27 @@ namespace Aue.Stage.Register.Service
     class CreateContact
     {
         private ContactRepositoryGateway repoGateway;
-
+        private ValidateAttributes validateAttributes;
         public CreateContact()
         {
             repoGateway = new ContactRepositoryGatewayImpl();
+            validateAttributes = new ValidateAttributes();
         }
 
-        public bool createContact(Contact contact)
+        public void createContact(Contact contact)
         {
-            if (string.IsNullOrWhiteSpace(contact.Name))
+  
+            if(validateAttributes.validateAttributes(contact))
             {
-                MessageBox.Show("Porfavor Preencha o Campos de Nome.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
+                if (repoGateway.Create(contact))
+                {
+                    MessageBox.Show("Contato criado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                  
+                MessageBox.Show("Nao foi possível criar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            if (string.IsNullOrWhiteSpace(contact.Sex))
-            {
-                MessageBox.Show("Porfavor Selecione Algum Sexo.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-
-            if (string.IsNullOrWhiteSpace(contact.City))
-            {
-                MessageBox.Show("Porfavor Preencha o Campo de Cidade.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
-            
-            if(repoGateway.Create(contact))
-                return true;
-           
-            MessageBox.Show("Nao foi possível criar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            return false;
-           
         }
     }
 }
