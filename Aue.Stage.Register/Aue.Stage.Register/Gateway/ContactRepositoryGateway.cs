@@ -10,13 +10,9 @@ namespace Aue.Stage.Register.Gateway
     interface ContactRepositoryGateway
     {
         bool Create(Contact contact);
-
         Contact GetById(int id);
-
         List<Contact> GetAll();
-
         bool Update(Contact contact);
-
         bool Delete(int id);
     }
 }

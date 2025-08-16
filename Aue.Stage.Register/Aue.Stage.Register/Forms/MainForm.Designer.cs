@@ -31,7 +31,6 @@
             this.maleCheckBox = new System.Windows.Forms.CheckBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.reportListView = new System.Windows.Forms.ListView();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -170,19 +169,11 @@
             this.reportListView.UseCompatibleStateImageBehavior = false;
             this.reportListView.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged_1);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(756, 335);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 188);
-            this.vScrollBar1.TabIndex = 15;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(839, 583);
-            this.Controls.Add(this.vScrollBar1);
             this.Controls.Add(this.reportListView);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.groupBox1);
@@ -221,7 +212,6 @@
         private System.Windows.Forms.CheckBox maleCheckBox;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ListView reportListView;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
 

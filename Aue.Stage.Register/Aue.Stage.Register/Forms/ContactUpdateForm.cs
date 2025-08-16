@@ -54,26 +54,6 @@ namespace Aue.Stage.Register.Forms
                 MessageBox.Show("Não foi possível atualizar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void UpdateForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Sexo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
         private void maleCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             if (maleCheckBox.Checked)
@@ -84,5 +64,12 @@ namespace Aue.Stage.Register.Forms
             if (femaleCheckBox.Checked)
                 maleCheckBox.Checked = false;
         }
+
+        private void UpdateForm_Load(object sender, EventArgs e) { }
+        private void groupBox1_Enter(object sender, EventArgs e) { }   
+        private void Sexo_Click(object sender, EventArgs e) { }
+        private void label1_Click(object sender, EventArgs e) { }
+        
+
     }
 }

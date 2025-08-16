@@ -214,6 +214,5 @@ namespace Aue.Stage.Register
             reportListView.Columns.Add("Homens", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Mulheres", 70, HorizontalAlignment.Center);
         }
-     
     }
 }
