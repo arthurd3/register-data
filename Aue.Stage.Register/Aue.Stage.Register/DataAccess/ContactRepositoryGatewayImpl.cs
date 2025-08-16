@@ -38,7 +38,6 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    // CORRIGIDO: Sintaxe SQL estava errada - faltava '(' e ordem das colunas
                     string sql = "INSERT INTO Contatos (CodContato, Nome, Sexo, [Data], Cidade) VALUES (?, ?, ?, ?, ?)";
                     using (var command = new OleDbCommand(sql, connection))
                     {
@@ -69,7 +68,6 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    // CORRIGIDO: Sintaxe SQL estava errada - não precisava de parênteses no SELECT
                     string sql = "SELECT CodContato, Nome, Sexo, [Data], Cidade FROM Contatos WHERE CodContato = ?";
                     using (var command = new OleDbCommand(sql, connection))
                     {
@@ -111,7 +109,6 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    // CORRIGIDO: Sintaxe SQL estava errada - removido parênteses do SELECT
                     string sql = "SELECT CodContato, Nome, Sexo, [Data], Cidade FROM Contatos ORDER BY CodContato";
                     using (var command = new OleDbCommand(sql, connection))
                     using (var reader = command.ExecuteReader())
@@ -147,7 +144,6 @@ namespace Aue.Stage.Register.DataAccess
                 {
                     connection.Open();
 
-                    // CORRIGIDO: Adicionado campo Data no UPDATE
                     string sql = "UPDATE Contatos SET Nome = ?, Cidade = ?, Sexo = ?, [Data] = ? WHERE CodContato = ?";
                     using (var command = new OleDbCommand(sql, connection))
                     {
@@ -215,14 +211,14 @@ namespace Aue.Stage.Register.DataAccess
                         }
                         else
                         {
-                            return 1; // Primeiro registro
+                            return 1;
                         }
                     }
                 }
             }
             catch
             {
-                return 1; // Em caso de erro, começa com 1
+                return 1; 
             }
         }
     }
