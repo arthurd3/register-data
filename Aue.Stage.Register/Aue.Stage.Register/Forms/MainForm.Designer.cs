@@ -153,7 +153,7 @@
             this.mascRadioButton.Location = new System.Drawing.Point(20, 27);
             this.mascRadioButton.Name = "mascRadioButton";
             this.mascRadioButton.Size = new System.Drawing.Size(73, 17);
-            this.mascRadioButton.TabIndex = 9;
+            this.mascRadioButton.TabIndex = 0;
             this.mascRadioButton.TabStop = true;
             this.mascRadioButton.Text = "Masculino";
             this.mascRadioButton.UseVisualStyleBackColor = true;
@@ -162,10 +162,10 @@
             // femRadioButton
             // 
             this.femRadioButton.AutoSize = true;
-            this.femRadioButton.Location = new System.Drawing.Point(135, 27);
+            this.femRadioButton.Location = new System.Drawing.Point(144, 27);
             this.femRadioButton.Name = "femRadioButton";
             this.femRadioButton.Size = new System.Drawing.Size(67, 17);
-            this.femRadioButton.TabIndex = 10;
+            this.femRadioButton.TabIndex = 1;
             this.femRadioButton.TabStop = true;
             this.femRadioButton.Text = "Feminino";
             this.femRadioButton.UseVisualStyleBackColor = true;
