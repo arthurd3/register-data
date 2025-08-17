@@ -44,8 +44,14 @@ namespace Aue.Stage.Register.Forms
             contactToUpdate.City = cityTextBox.Text;
             contactToUpdate.Sex = getCheckBoxSex();
 
-            if(!validateAttributes.validateAttributes(contactToUpdate))
+            try{
+                validateAttributes.validateAttributes(contactToUpdate);
+            }
+            catch (Exception ex){
+                MessageBox.Show(ex.Message, "Validation Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
+
 
             if (!updateContactService.updateContact(contactToUpdate))
                 MessageBox.Show("Nao foi possível atualizar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);

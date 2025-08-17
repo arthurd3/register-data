@@ -1,4 +1,5 @@
-﻿using Aue.Stage.Register.Models;
+﻿using Aue.Stage.Register.Exceptions;
+using Aue.Stage.Register.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,27 +11,23 @@ namespace Aue.Stage.Register.Service
 {
     class ValidateAttributes
     {
-        public bool validateAttributes(Contact contact)
+        public void validateAttributes(Contact contact)
         {
             if (string.IsNullOrWhiteSpace(contact.Name))
-            {
-                MessageBox.Show("Porfavor Preencha o Campos de Nome.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
+                throw new ValidationException("Porfavor Preencha o Campos de Nome.");
+
+            if (contact.Name.Any(char.IsDigit))
+                throw new ValidationException("O campo 'Nome' não pode conter Numeros.");
 
             if (string.IsNullOrWhiteSpace(contact.Sex))
-            {
-                MessageBox.Show("Porfavor Selecione Algum Sexo.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
+                throw new ValidationException("Porfavor Selecione Algum Sexo.");
 
             if (string.IsNullOrWhiteSpace(contact.City))
-            {
-                MessageBox.Show("Porfavor Preencha o Campo de Cidade.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return false;
-            }
+                throw new ValidationException("Porfavor Preencha o Campo de Cidade.");
 
-            return true;
+            if (contact.City.Any(char.IsDigit))
+                throw new ValidationException("O campo 'Nome' não pode conter Numeros.");
+
         }
     }
 }

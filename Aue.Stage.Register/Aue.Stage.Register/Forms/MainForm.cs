@@ -39,16 +39,13 @@ namespace Aue.Stage.Register
 
         private void loadAllContacts()
         {
-            try
-            {
+            try{
                 listContactsBox.DataSource = null;
                 listContactsBox.DataSource = listAllFromContact.listAllContact();
                 listContactsBox.DisplayMember = "Name";
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }catch(Exception ex){
+                MessageBox.Show(ex.Message, "DB Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
 
         private void countContactByCityButton_Click(object sender, EventArgs e)
@@ -79,12 +76,16 @@ namespace Aue.Stage.Register
                 CreatedAt = DateTime.Now
             };
 
-            if (!validateAttributes.validateAttributes(contactToCreate))
+            try{
+                validateAttributes.validateAttributes(contactToCreate);
+            }catch (Exception ex) {
+                MessageBox.Show(ex.Message, "Validation Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
+            }
 
             if (!createContact.createContact(contactToCreate))
             {
-                MessageBox.Show("Erro ao adicionar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erro ao adicionar o contato.", "Create Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -114,13 +115,14 @@ namespace Aue.Stage.Register
         private void deleteButton_Click(object sender, EventArgs e)
         {
             
-            if (deleteContact.deleteContact(selectContact().Id))
+            if (!deleteContact.deleteContact(selectContact().Id))
             {
-                MessageBox.Show("Contato deletar com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                loadAllContacts();
+                MessageBox.Show("Erro ao deletar o contato.", "Delete Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
-                MessageBox.Show("Erro ao deletar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            MessageBox.Show("Contato deletar com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            loadAllContacts();
 
         }
 
