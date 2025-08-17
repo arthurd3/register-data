@@ -27,7 +27,6 @@ namespace Aue.Stage.Register.Service
 
             if (contact.City.Any(char.IsDigit))
                 throw new ValidationException("O campo 'Nome' não pode conter Numeros.");
-
         }
     }
 }

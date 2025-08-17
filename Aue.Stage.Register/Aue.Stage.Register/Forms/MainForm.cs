@@ -134,29 +134,6 @@ namespace Aue.Stage.Register
 
         }
 
-        private Contact selectContact()
-        {
-            if (listContactsBox.SelectedItem != null)
-            {
-                return listContactsBox.SelectedItem as Contact;
-            }
-
-            MessageBox.Show("Selecione um contato na lista para alterar.",
-                                "Nenhum Contato Selecionado",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-            return null;
-        }
-
-        private string getCheckBoxSex()
-        {
-            string sex = string.Empty;
-
-            if (maleRadioButton.Checked || femaleRadioButton.Checked)
-                sex = femaleRadioButton.Checked ? "F" : "M";
-            return sex;
-        }
-
         private void addCityContactGroupsToReport(IEnumerable<IGrouping<string, Contact>> gruposPorCidade)
         {
             foreach (var grupoCidade in gruposPorCidade)
@@ -220,6 +197,29 @@ namespace Aue.Stage.Register
             reportListView.Columns.Add("Total", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Homens", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Mulheres", 70, HorizontalAlignment.Center);
+        }
+
+        private Contact selectContact()
+        {
+            if (listContactsBox.SelectedItem != null)
+            {
+                return listContactsBox.SelectedItem as Contact;
+            }
+
+            MessageBox.Show("Selecione um contato na lista para alterar.",
+                                "Nenhum Contato Selecionado",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+            return null;
+        }
+
+        private string getCheckBoxSex()
+        {
+            string sex = string.Empty;
+
+            if (maleRadioButton.Checked || femaleRadioButton.Checked)
+                sex = femaleRadioButton.Checked ? "F" : "M";
+            return sex;
         }
 
         private void groupSexBox_Enter(object sender, EventArgs e) {}
