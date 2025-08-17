@@ -13,13 +13,11 @@ namespace Aue.Stage.Register.Service
     class UpdateContact
     {
         private ContactRepositoryGateway repoGateway;
-        private ValidateAttributes validateAttributes;
         public UpdateContact()
         {
             repoGateway = new ContactRepositoryGatewayImpl();
             validateAttributes = new ValidateAttributes();
         }
-
         public bool updateContact(Contact contact)
         {
             return repoGateway.update(contact);

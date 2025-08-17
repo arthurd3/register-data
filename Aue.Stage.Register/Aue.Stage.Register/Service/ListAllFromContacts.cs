@@ -29,5 +29,6 @@ namespace Aue.Stage.Register.Service
             return new List<Contact>();
 
         }
+
     }
 }

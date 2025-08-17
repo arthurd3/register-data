@@ -13,7 +13,7 @@ namespace Aue.Stage.Register.Service
     class CreateContact
     {
         private ContactRepositoryGateway repoGateway;
-        
+
         public CreateContact()
         {
             repoGateway = new ContactRepositoryGatewayImpl();

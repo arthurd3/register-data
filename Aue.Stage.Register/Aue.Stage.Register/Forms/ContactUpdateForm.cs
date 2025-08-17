@@ -27,15 +27,16 @@ namespace Aue.Stage.Register.Forms
             LoadContactData();
             
         }
+
         private void LoadContactData()
         {
             nameTextBox.Text = contactToUpdate.Name;
             cityTextBox.Text = contactToUpdate.City;
 
             if (contactToUpdate.Sex == "M")
-                maleCheckBox.Checked = true;
+                maleRadioButton.Checked = true;
             else
-                femaleCheckBox.Checked = true;
+                femaleRadioButton.Checked = true;
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
@@ -63,28 +64,23 @@ namespace Aue.Stage.Register.Forms
 
         }
 
-        private void maleCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (maleCheckBox.Checked)
-                femaleCheckBox.Checked = false;
-        }
-        private void femaleCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (femaleCheckBox.Checked)
-                maleCheckBox.Checked = false;
-        }
         private string getCheckBoxSex()
         {
             string sex = string.Empty;
 
-            if (femaleCheckBox.Checked || maleCheckBox.Checked)
-                sex = femaleCheckBox.Checked ? "F" : "M";
+            if (maleRadioButton.Checked || femaleRadioButton.Checked)
+                sex = femaleRadioButton.Checked ? "F" : "M";
             return sex;
         }
+
         private void UpdateForm_Load(object sender, EventArgs e) { }
+
         private void groupBox1_Enter(object sender, EventArgs e) { }   
+
         private void Sexo_Click(object sender, EventArgs e) { }
+
         private void label1_Click(object sender, EventArgs e) { }
+
 
     }
 }

@@ -25,6 +25,7 @@ namespace Aue.Stage.Register.DataAccess
             }
 
         }
+
         private OleDbConnection createOpenConnection()
         {
             try{
@@ -35,6 +36,7 @@ namespace Aue.Stage.Register.DataAccess
                 throw new ConnectionException($"Erro ao abrir conexão com o banco de dados: {ex.Message}");
             }
         }
+
         public bool create(Contact contact)
         {
             using (var connection = createOpenConnection())
@@ -53,6 +55,7 @@ namespace Aue.Stage.Register.DataAccess
             }
             return true;
         }
+
         public List<Contact> getAll()
         {
             var contacts = new List<Contact>();
@@ -78,6 +81,7 @@ namespace Aue.Stage.Register.DataAccess
             }
             return contacts;
         }
+
         public bool update(Contact contact)
         {
             using (var connection = createOpenConnection())
@@ -96,6 +100,7 @@ namespace Aue.Stage.Register.DataAccess
                 }
             }
         }
+
         public bool delete(int id)
         {
             using (var connection = createOpenConnection())
@@ -110,6 +115,7 @@ namespace Aue.Stage.Register.DataAccess
                 }
             }
         }
+
         private int getNextId()
         {
             using (var connection = createOpenConnection())
@@ -126,5 +132,6 @@ namespace Aue.Stage.Register.DataAccess
                 }
             }
         }
+
     }
 }

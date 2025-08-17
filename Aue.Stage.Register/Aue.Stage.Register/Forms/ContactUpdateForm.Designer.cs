@@ -31,14 +31,14 @@
             this.changeBtn = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.femaleCheckBox = new System.Windows.Forms.CheckBox();
-            this.maleCheckBox = new System.Windows.Forms.CheckBox();
             this.Sexo = new System.Windows.Forms.Label();
             this.cityTextBox = new System.Windows.Forms.TextBox();
             this.Cidade = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.Nome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.maleRadioButton = new System.Windows.Forms.RadioButton();
+            this.femaleRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,36 +62,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.femaleCheckBox);
-            this.groupBox1.Controls.Add(this.maleCheckBox);
+            this.groupBox1.Controls.Add(this.maleRadioButton);
+            this.groupBox1.Controls.Add(this.femaleRadioButton);
             this.groupBox1.Location = new System.Drawing.Point(95, 130);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(248, 63);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // femaleCheckBox
-            // 
-            this.femaleCheckBox.AutoSize = true;
-            this.femaleCheckBox.Location = new System.Drawing.Point(139, 25);
-            this.femaleCheckBox.Name = "femaleCheckBox";
-            this.femaleCheckBox.Size = new System.Drawing.Size(68, 17);
-            this.femaleCheckBox.TabIndex = 1;
-            this.femaleCheckBox.Text = "Feminino";
-            this.femaleCheckBox.UseVisualStyleBackColor = true;
-            this.femaleCheckBox.CheckedChanged += new System.EventHandler(this.femaleCheckBox_CheckedChanged);
-            // 
-            // maleCheckBox
-            // 
-            this.maleCheckBox.AutoSize = true;
-            this.maleCheckBox.Location = new System.Drawing.Point(16, 25);
-            this.maleCheckBox.Name = "maleCheckBox";
-            this.maleCheckBox.Size = new System.Drawing.Size(74, 17);
-            this.maleCheckBox.TabIndex = 0;
-            this.maleCheckBox.Text = "Masculino";
-            this.maleCheckBox.UseVisualStyleBackColor = true;
-            this.maleCheckBox.CheckedChanged += new System.EventHandler(this.maleCheckBox_CheckedChanged);
             // 
             // Sexo
             // 
@@ -145,6 +123,28 @@
             this.label1.Text = "Alterando Contato ->";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // maleRadioButton
+            // 
+            this.maleRadioButton.AutoSize = true;
+            this.maleRadioButton.Location = new System.Drawing.Point(18, 27);
+            this.maleRadioButton.Name = "maleRadioButton";
+            this.maleRadioButton.Size = new System.Drawing.Size(73, 17);
+            this.maleRadioButton.TabIndex = 2;
+            this.maleRadioButton.TabStop = true;
+            this.maleRadioButton.Text = "Masculino";
+            this.maleRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // femaleRadioButton
+            // 
+            this.femaleRadioButton.AutoSize = true;
+            this.femaleRadioButton.Location = new System.Drawing.Point(134, 27);
+            this.femaleRadioButton.Name = "femaleRadioButton";
+            this.femaleRadioButton.Size = new System.Drawing.Size(67, 17);
+            this.femaleRadioButton.TabIndex = 3;
+            this.femaleRadioButton.TabStop = true;
+            this.femaleRadioButton.Text = "Feminino";
+            this.femaleRadioButton.UseVisualStyleBackColor = true;
+            // 
             // ContactUpdateForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -175,13 +175,13 @@
         private System.Windows.Forms.Button changeBtn;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox femaleCheckBox;
-        private System.Windows.Forms.CheckBox maleCheckBox;
         private System.Windows.Forms.Label Sexo;
         private System.Windows.Forms.TextBox cityTextBox;
         private System.Windows.Forms.Label Cidade;
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label Nome;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton maleRadioButton;
+        private System.Windows.Forms.RadioButton femaleRadioButton;
     }
 }

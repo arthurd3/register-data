@@ -29,8 +29,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listContactsBox = new System.Windows.Forms.ListBox();
             this.reportListView = new System.Windows.Forms.ListView();
-            this.mascRadioButton = new System.Windows.Forms.RadioButton();
-            this.femRadioButton = new System.Windows.Forms.RadioButton();
+            this.maleRadioButton = new System.Windows.Forms.RadioButton();
+            this.femaleRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,8 +120,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.mascRadioButton);
-            this.groupBox1.Controls.Add(this.femRadioButton);
+            this.groupBox1.Controls.Add(this.maleRadioButton);
+            this.groupBox1.Controls.Add(this.femaleRadioButton);
             this.groupBox1.Location = new System.Drawing.Point(516, 86);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 63);
@@ -147,28 +147,28 @@
             this.reportListView.UseCompatibleStateImageBehavior = false;
             this.reportListView.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged_1);
             // 
-            // mascRadioButton
+            // maleRadioButton
             // 
-            this.mascRadioButton.AutoSize = true;
-            this.mascRadioButton.Location = new System.Drawing.Point(20, 27);
-            this.mascRadioButton.Name = "mascRadioButton";
-            this.mascRadioButton.Size = new System.Drawing.Size(73, 17);
-            this.mascRadioButton.TabIndex = 0;
-            this.mascRadioButton.TabStop = true;
-            this.mascRadioButton.Text = "Masculino";
-            this.mascRadioButton.UseVisualStyleBackColor = true;
-            this.mascRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.maleRadioButton.AutoSize = true;
+            this.maleRadioButton.Location = new System.Drawing.Point(20, 27);
+            this.maleRadioButton.Name = "maleRadioButton";
+            this.maleRadioButton.Size = new System.Drawing.Size(73, 17);
+            this.maleRadioButton.TabIndex = 0;
+            this.maleRadioButton.TabStop = true;
+            this.maleRadioButton.Text = "Masculino";
+            this.maleRadioButton.UseVisualStyleBackColor = true;
+            this.maleRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // femRadioButton
+            // femaleRadioButton
             // 
-            this.femRadioButton.AutoSize = true;
-            this.femRadioButton.Location = new System.Drawing.Point(144, 27);
-            this.femRadioButton.Name = "femRadioButton";
-            this.femRadioButton.Size = new System.Drawing.Size(67, 17);
-            this.femRadioButton.TabIndex = 1;
-            this.femRadioButton.TabStop = true;
-            this.femRadioButton.Text = "Feminino";
-            this.femRadioButton.UseVisualStyleBackColor = true;
+            this.femaleRadioButton.AutoSize = true;
+            this.femaleRadioButton.Location = new System.Drawing.Point(144, 27);
+            this.femaleRadioButton.Name = "femaleRadioButton";
+            this.femaleRadioButton.Size = new System.Drawing.Size(67, 17);
+            this.femaleRadioButton.TabIndex = 1;
+            this.femaleRadioButton.TabStop = true;
+            this.femaleRadioButton.Text = "Feminino";
+            this.femaleRadioButton.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -212,8 +212,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ListBox listContactsBox;
         private System.Windows.Forms.ListView reportListView;
-        private System.Windows.Forms.RadioButton mascRadioButton;
-        private System.Windows.Forms.RadioButton femRadioButton;
+        private System.Windows.Forms.RadioButton maleRadioButton;
+        private System.Windows.Forms.RadioButton femaleRadioButton;
     }
 }
 

@@ -94,8 +94,8 @@ namespace Aue.Stage.Register
             nameTextBox.Clear();
             cityTextBox.Clear();
 
-            femRadioButton.Checked = false;
-            mascRadioButton.Checked = false;
+            femaleRadioButton.Checked = false;
+            maleRadioButton.Checked = false;
 
             loadAllContacts();
         }
@@ -152,8 +152,8 @@ namespace Aue.Stage.Register
         {
             string sex = string.Empty;
 
-            if (mascRadioButton.Checked || femRadioButton.Checked)
-                sex = femRadioButton.Checked ? "F" : "M";
+            if (maleRadioButton.Checked || femaleRadioButton.Checked)
+                sex = femaleRadioButton.Checked ? "F" : "M";
             return sex;
         }
 
@@ -191,6 +191,7 @@ namespace Aue.Stage.Register
                 
             }
         }
+
         private void addTotalContactsSummary(List<Contact> todosContatos, int totalHomens, int totalMulheres)
         {
             ListViewItem totalItem = new ListViewItem("Numero de contatos no banco de dados");
@@ -220,11 +221,18 @@ namespace Aue.Stage.Register
             reportListView.Columns.Add("Homens", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Mulheres", 70, HorizontalAlignment.Center);
         }
+
         private void groupSexBox_Enter(object sender, EventArgs e) {}
+
         private void cityTextBox_TextChanged(object sender, EventArgs e) {}
+
         private void nameTextBox_TextChanged(object sender, EventArgs e) {}
+
         private void label2_Click(object sender, EventArgs e) {}
+
         private void reportListView_SelectedIndexChanged_1(object sender, EventArgs e) {}
+
         private void radioButton1_CheckedChanged(object sender, EventArgs e) {}
+
     }
 }
