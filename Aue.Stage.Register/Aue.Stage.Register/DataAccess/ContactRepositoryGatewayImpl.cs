@@ -42,7 +42,6 @@ namespace Aue.Stage.Register.DataAccess
             }
 
         }
-
         public bool create(Contact contact)
         {
             using (var connection = createOpenConnection())
@@ -61,7 +60,6 @@ namespace Aue.Stage.Register.DataAccess
             }
             return true;
         }
-
         public List<Contact> getAll()
         {
             var contacts = new List<Contact>();
@@ -87,7 +85,6 @@ namespace Aue.Stage.Register.DataAccess
             }
             return contacts;
         }
-
         public bool update(Contact contact)
         {
             using (var connection = createOpenConnection())
@@ -106,7 +103,6 @@ namespace Aue.Stage.Register.DataAccess
                 }
             }
         }
-
         public bool delete(int id)
         {
             using (var connection = createOpenConnection())
