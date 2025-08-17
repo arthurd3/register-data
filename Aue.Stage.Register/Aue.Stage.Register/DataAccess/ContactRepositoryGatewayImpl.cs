@@ -28,15 +28,12 @@ namespace Aue.Stage.Register.DataAccess
         private OleDbConnection createOpenConnection()
         {
             try{
-
                 var connection = new OleDbConnection(getConnectionString());
                 connection.Open();
                 return connection;
-
             }catch(Exception ex) { 
                 throw new ConnectionException($"Erro ao abrir conexão com o banco de dados: {ex.Message}");
             }
-
         }
         public bool create(Contact contact)
         {
@@ -113,7 +110,6 @@ namespace Aue.Stage.Register.DataAccess
                 }
             }
         }
-
         private int getNextId()
         {
             using (var connection = createOpenConnection())
@@ -130,6 +126,5 @@ namespace Aue.Stage.Register.DataAccess
                 }
             }
         }
-
     }
 }

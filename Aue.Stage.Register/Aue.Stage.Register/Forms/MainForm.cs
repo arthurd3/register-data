@@ -114,7 +114,15 @@ namespace Aue.Stage.Register
 
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            
+
+            var confirmResult = MessageBox.Show($"Você tem certeza que deseja excluir o contato '{selectContact().Name}'?",
+                                     "Confirmar Exclusão",
+                                     MessageBoxButtons.YesNo,
+                                     MessageBoxIcon.Question);
+
+            if (confirmResult != DialogResult.Yes)
+                return;
+
             if (!deleteContact.deleteContact(selectContact().Id))
             {
                 MessageBox.Show("Erro ao deletar o contato.", "Delete Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
