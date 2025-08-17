@@ -39,7 +39,7 @@
             this.coun.Location = new System.Drawing.Point(12, 529);
             this.coun.Name = "coun";
             this.coun.Size = new System.Drawing.Size(291, 42);
-            this.coun.TabIndex = 0;
+            this.coun.TabIndex = 8;
             this.coun.Text = "Contar No de contatos por cidade";
             this.coun.UseVisualStyleBackColor = true;
             this.coun.Click += new System.EventHandler(this.countContactByCityButton_Click);
@@ -58,7 +58,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(516, 49);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(257, 20);
-            this.nameTextBox.TabIndex = 2;
+            this.nameTextBox.TabIndex = 1;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // cityTextBox
@@ -66,7 +66,7 @@
             this.cityTextBox.Location = new System.Drawing.Point(516, 172);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(257, 20);
-            this.cityTextBox.TabIndex = 4;
+            this.cityTextBox.TabIndex = 3;
             this.cityTextBox.TextChanged += new System.EventHandler(this.cityTextBox_TextChanged);
             // 
             // Cidade
@@ -85,7 +85,7 @@
             this.Sexo.Location = new System.Drawing.Point(470, 115);
             this.Sexo.Name = "Sexo";
             this.Sexo.Size = new System.Drawing.Size(31, 13);
-            this.Sexo.TabIndex = 5;
+            this.Sexo.TabIndex = 2;
             this.Sexo.Text = "Sexo";
             // 
             // IncluiButton
@@ -93,7 +93,7 @@
             this.IncluiButton.Location = new System.Drawing.Point(473, 207);
             this.IncluiButton.Name = "IncluiButton";
             this.IncluiButton.Size = new System.Drawing.Size(94, 51);
-            this.IncluiButton.TabIndex = 8;
+            this.IncluiButton.TabIndex = 4;
             this.IncluiButton.Text = "Inclui";
             this.IncluiButton.UseVisualStyleBackColor = true;
             this.IncluiButton.Click += new System.EventHandler(this.includeButton_Click);
@@ -103,7 +103,7 @@
             this.AlteraButton.Location = new System.Drawing.Point(573, 207);
             this.AlteraButton.Name = "AlteraButton";
             this.AlteraButton.Size = new System.Drawing.Size(97, 51);
-            this.AlteraButton.TabIndex = 9;
+            this.AlteraButton.TabIndex = 5;
             this.AlteraButton.Text = "Altera";
             this.AlteraButton.UseVisualStyleBackColor = true;
             this.AlteraButton.Click += new System.EventHandler(this.updateButton_Click);
@@ -113,7 +113,7 @@
             this.ExcluiButton.Location = new System.Drawing.Point(677, 207);
             this.ExcluiButton.Name = "ExcluiButton";
             this.ExcluiButton.Size = new System.Drawing.Size(96, 51);
-            this.ExcluiButton.TabIndex = 10;
+            this.ExcluiButton.TabIndex = 6;
             this.ExcluiButton.Text = "Exclui";
             this.ExcluiButton.UseVisualStyleBackColor = true;
             this.ExcluiButton.Click += new System.EventHandler(this.deleteButton_Click);
@@ -125,7 +125,7 @@
             this.groupBox1.Location = new System.Drawing.Point(516, 86);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 63);
-            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupSexBox_Enter);
             // 
@@ -157,7 +157,7 @@
             this.listContactsBox.Location = new System.Drawing.Point(12, 12);
             this.listContactsBox.Name = "listContactsBox";
             this.listContactsBox.Size = new System.Drawing.Size(429, 303);
-            this.listContactsBox.TabIndex = 13;
+            this.listContactsBox.TabIndex = 0;
             // 
             // reportListView
             // 
@@ -165,7 +165,7 @@
             this.reportListView.Location = new System.Drawing.Point(12, 335);
             this.reportListView.Name = "reportListView";
             this.reportListView.Size = new System.Drawing.Size(761, 188);
-            this.reportListView.TabIndex = 14;
+            this.reportListView.TabIndex = 7;
             this.reportListView.UseCompatibleStateImageBehavior = false;
             this.reportListView.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged_1);
             // 
@@ -188,7 +188,7 @@
             this.Controls.Add(this.coun);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro de Contatos";
+            this.Text = "2";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
