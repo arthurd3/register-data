@@ -27,10 +27,10 @@
             this.AlteraButton = new System.Windows.Forms.Button();
             this.ExcluiButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.femaleCheckBox = new System.Windows.Forms.CheckBox();
-            this.maleCheckBox = new System.Windows.Forms.CheckBox();
             this.listContactsBox = new System.Windows.Forms.ListBox();
             this.reportListView = new System.Windows.Forms.ListView();
+            this.mascRadioButton = new System.Windows.Forms.RadioButton();
+            this.femRadioButton = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -120,36 +120,14 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.femaleCheckBox);
-            this.groupBox1.Controls.Add(this.maleCheckBox);
+            this.groupBox1.Controls.Add(this.mascRadioButton);
+            this.groupBox1.Controls.Add(this.femRadioButton);
             this.groupBox1.Location = new System.Drawing.Point(516, 86);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(257, 63);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupSexBox_Enter);
-            // 
-            // femaleCheckBox
-            // 
-            this.femaleCheckBox.AutoSize = true;
-            this.femaleCheckBox.Location = new System.Drawing.Point(139, 25);
-            this.femaleCheckBox.Name = "femaleCheckBox";
-            this.femaleCheckBox.Size = new System.Drawing.Size(68, 17);
-            this.femaleCheckBox.TabIndex = 1;
-            this.femaleCheckBox.Text = "Feminino";
-            this.femaleCheckBox.UseVisualStyleBackColor = true;
-            this.femaleCheckBox.CheckedChanged += new System.EventHandler(this.femaleCheckBox_CheckedChanged_1);
-            // 
-            // maleCheckBox
-            // 
-            this.maleCheckBox.AutoSize = true;
-            this.maleCheckBox.Location = new System.Drawing.Point(16, 25);
-            this.maleCheckBox.Name = "maleCheckBox";
-            this.maleCheckBox.Size = new System.Drawing.Size(74, 17);
-            this.maleCheckBox.TabIndex = 0;
-            this.maleCheckBox.Text = "Masculino";
-            this.maleCheckBox.UseVisualStyleBackColor = true;
-            this.maleCheckBox.CheckedChanged += new System.EventHandler(this.maleCheckBox_CheckedChanged);
             // 
             // listContactsBox
             // 
@@ -168,6 +146,29 @@
             this.reportListView.TabIndex = 7;
             this.reportListView.UseCompatibleStateImageBehavior = false;
             this.reportListView.SelectedIndexChanged += new System.EventHandler(this.reportListView_SelectedIndexChanged_1);
+            // 
+            // mascRadioButton
+            // 
+            this.mascRadioButton.AutoSize = true;
+            this.mascRadioButton.Location = new System.Drawing.Point(20, 27);
+            this.mascRadioButton.Name = "mascRadioButton";
+            this.mascRadioButton.Size = new System.Drawing.Size(73, 17);
+            this.mascRadioButton.TabIndex = 9;
+            this.mascRadioButton.TabStop = true;
+            this.mascRadioButton.Text = "Masculino";
+            this.mascRadioButton.UseVisualStyleBackColor = true;
+            this.mascRadioButton.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // femRadioButton
+            // 
+            this.femRadioButton.AutoSize = true;
+            this.femRadioButton.Location = new System.Drawing.Point(135, 27);
+            this.femRadioButton.Name = "femRadioButton";
+            this.femRadioButton.Size = new System.Drawing.Size(67, 17);
+            this.femRadioButton.TabIndex = 10;
+            this.femRadioButton.TabStop = true;
+            this.femRadioButton.Text = "Feminino";
+            this.femRadioButton.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -209,10 +210,10 @@
         private System.Windows.Forms.Button AlteraButton;
         private System.Windows.Forms.Button ExcluiButton;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox femaleCheckBox;
-        private System.Windows.Forms.CheckBox maleCheckBox;
         private System.Windows.Forms.ListBox listContactsBox;
         private System.Windows.Forms.ListView reportListView;
+        private System.Windows.Forms.RadioButton mascRadioButton;
+        private System.Windows.Forms.RadioButton femRadioButton;
     }
 }
 

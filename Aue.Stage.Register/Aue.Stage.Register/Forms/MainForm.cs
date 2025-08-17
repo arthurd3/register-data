@@ -94,8 +94,8 @@ namespace Aue.Stage.Register
             nameTextBox.Clear();
             cityTextBox.Clear();
 
-            femaleCheckBox.Checked = false;
-            maleCheckBox.Checked = false;
+            femRadioButton.Checked = false;
+            mascRadioButton.Checked = false;
 
             loadAllContacts();
         }
@@ -147,14 +147,16 @@ namespace Aue.Stage.Register
                                 MessageBoxIcon.Warning);
             return null;
         }
+
         private string getCheckBoxSex()
         {
             string sex = string.Empty;
 
-            if (femaleCheckBox.Checked || maleCheckBox.Checked)
-                sex = femaleCheckBox.Checked ? "F" : "M";
+            if (mascRadioButton.Checked || femRadioButton.Checked)
+                sex = femRadioButton.Checked ? "F" : "M";
             return sex;
         }
+
         private void addCityContactGroupsToReport(IEnumerable<IGrouping<string, Contact>> gruposPorCidade)
         {
             foreach (var grupoCidade in gruposPorCidade)
@@ -200,16 +202,7 @@ namespace Aue.Stage.Register
 
             reportListView.Items.Add("");
         }
-        private void femaleCheckBox_CheckedChanged_1(object sender, EventArgs e)
-        {
-            if (femaleCheckBox.Checked)
-                maleCheckBox.Checked = false;
-        }
-        private void maleCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-            if (maleCheckBox.Checked)
-                femaleCheckBox.Checked = false;
-        }
+
         private void configureReportListView()
         {
             if (reportListView == null) return;
@@ -227,11 +220,11 @@ namespace Aue.Stage.Register
             reportListView.Columns.Add("Homens", 70, HorizontalAlignment.Center);
             reportListView.Columns.Add("Mulheres", 70, HorizontalAlignment.Center);
         }
-
         private void groupSexBox_Enter(object sender, EventArgs e) {}
         private void cityTextBox_TextChanged(object sender, EventArgs e) {}
         private void nameTextBox_TextChanged(object sender, EventArgs e) {}
         private void label2_Click(object sender, EventArgs e) {}
         private void reportListView_SelectedIndexChanged_1(object sender, EventArgs e) {}
+        private void radioButton1_CheckedChanged(object sender, EventArgs e) {}
     }
 }
