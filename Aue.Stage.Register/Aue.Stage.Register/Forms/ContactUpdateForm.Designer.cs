@@ -160,6 +160,7 @@
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.changeBtn);
             this.Name = "ContactUpdateForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "UpdateForm";
             this.Load += new System.EventHandler(this.UpdateForm_Load);
             this.groupBox1.ResumeLayout(false);

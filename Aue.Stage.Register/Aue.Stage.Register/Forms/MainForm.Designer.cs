@@ -187,6 +187,7 @@
             this.Controls.Add(this.Nome);
             this.Controls.Add(this.coun);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Contatos";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.groupBox1.ResumeLayout(false);
