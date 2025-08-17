@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -94,32 +94,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T15:34:24.75Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConnectionException.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T17:06:19.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ValidationException.cs",
-              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ValidationException.cs",
-              "RelativeDocumentMoniker": "Aue.Stage.Register\\Exceptions\\ValidationException.cs",
-              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ValidationException.cs",
-              "RelativeToolTip": "Aue.Stage.Register\\Exceptions\\ValidationException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T17:03:53.977Z",
               "EditorCaption": ""
             },
             {
@@ -180,9 +154,35 @@
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\UpdateContact.cs",
               "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
               "RelativeToolTip": "Aue.Stage.Register\\Service\\UpdateContact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAjwA8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAjwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T21:00:11.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Exceptions\\ValidationException.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\Exceptions\\ValidationException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T17:03:53.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConnectionException.cs",
+              "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
+              "RelativeDocumentMoniker": "Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
+              "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
+              "RelativeToolTip": "Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T17:06:19.758Z",
               "EditorCaption": ""
             },
             {
