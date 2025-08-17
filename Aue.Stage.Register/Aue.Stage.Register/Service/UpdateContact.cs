@@ -16,7 +16,6 @@ namespace Aue.Stage.Register.Service
         public UpdateContact()
         {
             repoGateway = new ContactRepositoryGatewayImpl();
-            validateAttributes = new ValidateAttributes();
         }
         public bool updateContact(Contact contact)
         {

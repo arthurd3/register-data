@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\service\\updatecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\updatecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\exceptions\\connectionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\exceptions\\connectionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\contactupdateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\forms\\validateattributes\\validateattributes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\exceptions\\connectionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\exceptions\\connectionexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\dataaccess\\contactrepositorygatewayimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\dataaccess\\contactrepositorygatewayimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|c:\\users\\thuzinrealone\\desktop\\projetos c#\\c#-estagio\\register-data\\aue.stage.register\\aue.stage.register\\service\\updatecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|solutionrelative:aue.stage.register\\service\\updatecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9F4EDD0F-F752-434B-B6B4-BB2C04581181}|Aue.Stage.Register\\Aue.Stage.Register.csproj|C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\aue.stage.register\\service\\createcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\MainForm.cs",
@@ -84,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ContactUpdateForm.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
               "RelativeToolTip": "Aue.Stage.Register\\Forms\\ContactUpdateForm.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T15:34:24.75Z",
               "IsPinned": true,
@@ -98,20 +98,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ConnectionException.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
               "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
               "RelativeToolTip": "Aue.Stage.Register\\Exceptions\\ConnectionException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-17T17:06:19.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ValidationException.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Exceptions\\ValidationException.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Exceptions\\ValidationException.cs",
@@ -124,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ValidateAttributes.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\ValidateAttributes\\ValidateAttributes.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\ValidateAttributes\\ValidateAttributes.cs",
@@ -149,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Forms\\MainForm.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Forms\\MainForm.cs",
@@ -161,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ContactRepositoryGatewayImpl.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\DataAccess\\ContactRepositoryGatewayImpl.cs",
@@ -174,13 +174,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "UpdateContact.cs",
               "DocumentMoniker": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
               "RelativeDocumentMoniker": "Aue.Stage.Register\\Service\\UpdateContact.cs",
               "ToolTip": "C:\\Users\\ThuzinRealOne\\Desktop\\Projetos C#\\C#-Estagio\\register-data\\Aue.Stage.Register\\Aue.Stage.Register\\Service\\UpdateContact.cs",
               "RelativeToolTip": "Aue.Stage.Register\\Service\\UpdateContact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAjwA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-16T21:00:11.554Z",
               "EditorCaption": ""
