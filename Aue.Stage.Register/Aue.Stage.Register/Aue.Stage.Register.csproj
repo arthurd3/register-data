@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\ContactRepositoryGatewayImpl.cs" />
+    <Compile Include="Exceptions\ConnectionException.cs" />
+    <Compile Include="Exceptions\ValidationException.cs" />
     <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,4 +1,5 @@
-﻿using Aue.Stage.Register.Gateway;
+﻿using Aue.Stage.Register.Exceptions;
+using Aue.Stage.Register.Gateway;
 using Aue.Stage.Register.Models;
 using System;
 using System.Collections.Generic;
@@ -16,29 +17,24 @@ namespace Aue.Stage.Register.DataAccess
         {
             if (!File.Exists(dbPath))
                 throw new FileNotFoundException($"Banco de Dados nao Encontrado: {dbPath}");
-           
+
             try{
                 return $"Provider=Microsoft.Jet.OLEDB.4.0;Data Source={dbPath};";
-
-            }catch(Exception ex){
-
-                MessageBox.Show($"Erro na conexao com DB: {ex.Message}",
-                    "Erro de Conexao", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+            }catch (Exception ex){
+                throw new ConnectionException($"Erro na conexao com DB: {ex.Message}");
             }
+
         }
         private OleDbConnection createOpenConnection()
         {
             try{
+
                 var connection = new OleDbConnection(getConnectionString());
                 connection.Open();
                 return connection;
 
             }catch(Exception ex) { 
-
-                MessageBox.Show($"Erro ao abrir conexão com o banco de dados: {ex.Message}",
-                    "Erro de Conexão", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                throw;
+                throw new ConnectionException($"Erro ao abrir conexão com o banco de dados: {ex.Message}");
             }
 
         }

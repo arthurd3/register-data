@@ -39,9 +39,16 @@ namespace Aue.Stage.Register
 
         private void loadAllContacts()
         {
-            listContactsBox.DataSource = null;
-            listContactsBox.DataSource = listAllFromContact.listAllContact();
-            listContactsBox.DisplayMember = "Name";
+            try
+            {
+                listContactsBox.DataSource = null;
+                listContactsBox.DataSource = listAllFromContact.listAllContact();
+                listContactsBox.DisplayMember = "Name";
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void countContactByCityButton_Click(object sender, EventArgs e)
@@ -75,10 +82,13 @@ namespace Aue.Stage.Register
             if (!validateAttributes.validateAttributes(contactToCreate))
                 return;
 
-            if(createContact.createContact(contactToCreate))
-                MessageBox.Show("Contato adicionado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            else
+            if (!createContact.createContact(contactToCreate))
+            {
                 MessageBox.Show("Erro ao adicionar o contato.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            MessageBox.Show("Contato adicionado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             nameTextBox.Clear();
             cityTextBox.Clear();
